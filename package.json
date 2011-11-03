@@ -1,0 +1,15 @@
+{
+  "author": "Craig Condon <craig@spiceapps.com>",
+  "name": "cupboard",
+  "description": "Repo management for your projects (git, npm, etc.)",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spiceapps/cupboard.git"
+  },
+  "engines": {
+    "node": "~0.4.12"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
