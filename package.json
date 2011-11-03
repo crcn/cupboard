@@ -10,6 +10,10 @@
   "engines": {
     "node": "~0.4.12"
   },
-  "dependencies": {},
+  "dependencies": 
+  {
+    "gumbo":"0.0.10",
+    "Structr":"*"
+  },
   "devDependencies": {}
 }

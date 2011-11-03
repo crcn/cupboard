@@ -26,9 +26,10 @@ the `init` command will walk you through a setup process. But if you're like me,
 name=my app name
 
 [commands]    
-
+                                                 
+# 
 # publishes the project to these locations
-publish=npm publish, git push origin master  
+publish=npm publish, git push origin master
 
 # bumps the version of a given app
 bump=npm bump         
