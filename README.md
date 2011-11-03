@@ -18,7 +18,7 @@ For each project you want to use in cupboard, simply call:
                                             
 	cupboard init                       
 	
-the `init` command will walk you through a setup process. But if you're like me, you'll want more granular control over the cupboard script. In your root project directory, create a file called `.cupboard`, add some config settings similar to the following chunk:
+the `init` command will walk you through a setup process. But if you're like me, you'll want more granular control over the cupboard script. In your root project directory, create a file called `.cupboard`, and add some config settings similar to the following chunk:
 
 ```ini    
 
