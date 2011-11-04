@@ -15,7 +15,9 @@ Repository management (GIT/NPM) for your projects
 ## To-Do
 
 - --all flag       
-- ability to add custom templates
+- ability to add custom templates e.g: `cbd add-template /path/to/template.conf`
+- ability to list available templates
+- help menu
 
 ## Installation 
 
