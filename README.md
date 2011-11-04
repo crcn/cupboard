@@ -71,14 +71,13 @@ XXXX=whatever command I want...
                              
 ## Commands           
                   
-- `cbd init` - adds an project to cupboard.
-- `cbd list` - list all the registered projects. Also contains details of what projects have
-been updated.         
-- `cbd updates` - list all register projects with updates.                                                                          
-- `cbd publish [PROJ_NAME]` - publishes given application                        
-- `cbd open [PROJ_NAME]` - open a project in finder    
-- `cbd dir [PROJ_NAME]` - returns the directory of the target app     
-- `cbd [COMMAND] [PROJ_NAME]` - custom command given for target application 
+- `cbd init` - Adds an project to cupboard.
+- `cbd list` - Lit all the projects. Also contains details of what projects have been updated.         
+- `cbd updates` - List projects with updates.                                                                          
+- `cbd publish [PROJ_NAME]` - Publishes given application.                        
+- `cbd open [PROJ_NAME]` - Open a project in finder.    
+- `cbd dir [PROJ_NAME]` - Returns the directory of the target app.     
+- `cbd [COMMAND] [PROJ_NAME]` - Custom command given for target application.
 
 
 ## Default Template
