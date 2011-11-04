@@ -6,7 +6,7 @@ Repository management (GIT/NPM) for your projects
 
 ## Why?                                                     
        
-Have you seen how many public repositories I have? It's become a pain to manage - especially when I forget to commit code (to NPM, github, etc.). I built this utility to help manage my projects. 
+Managing 50+ repositories is a pain in the ass. 
 
 ## Features                                
            
