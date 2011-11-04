@@ -22,6 +22,7 @@ Managing a kajillion repositories is a pain in the ass.
 - ability to add custom templates e.g: `cbd add-template /path/to/template.conf`
 - ability to list available templates
 - help menu
+- honor .ignore files
 
 ## Installation 
 
