@@ -24,7 +24,7 @@ Repository management (GIT/NPM) for your projects
 
 ## Usage                                   
                           
-For each project you want to use in cupboard, simply this command in your project directory:
+For each project you want to use in cupboard, simply call this command in your project directory:
                                             
 	cupboard init               
 
@@ -40,7 +40,7 @@ will append my/file/to/ignore to .gitignore. Here's another example:
 
  	cupboard publish my-app "my commit message"
                    
-will call the publish command specified in git+npm, which happens to commit, and push my-app to both GIT, and NPM.       
+will call the publish command specified in the template git+npm, which happens to commit, and push my-app to both GIT, and NPM.       
 
 
 
