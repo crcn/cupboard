@@ -1,4 +1,7 @@
-Repository management (GIT/NPM) for your projects 
+Repository management (GIT/NPM) for your projects       
+
+
+![Alt screenshot](http://i.imgur.com/YWIey.png)
                                            
 
 ## Features                                
@@ -72,7 +75,7 @@ been updated.
 - `npm`
 
 
-## Useful tricks
+## Useful Commands
 
 the following chunk will change the current working directory to the application specified:   
 
@@ -80,7 +83,9 @@ the following chunk will change the current working directory to the application
 
 cd `cbd dir my-project-name`
 
-````
+````     
+
+
               
 
                        
