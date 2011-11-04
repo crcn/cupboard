@@ -23,18 +23,23 @@ Repository management (GIT/NPM) for your projects
 For each project you want to use in cupboard, simply call:
                                             
 	cupboard init               
-   
 
-That command will run you through the basic setup. If you're like me however, your a lazy coder who wants to use  
+That command will run you through the basic setup. You can also used pre-defined templates to speed things up. For instance:
+    
+	cupboard init git+npm
+	                         
+will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore` For example:
+
+	cupboard ignore my-app my/file/to/ignore
 	
-That command alone will use the *default* cupboard template. You can of course use other templates. Right now they include the following: `git`, `git+npm`, and `npm`. Essentially, templates
+will append **my/file/to/ignore** to **.gitignore** because **ignore** was specified in the **git+npm** template. Here's another example:
 
-	
-the `init` command will walk you through a setup process. There are a few built-in templates you can use, such as `npm`, and 
+ 	cupboard publish my-app "my commit message"
+                   
+will call the **publish** command specified in git+npm, which happens to commit, and publish **my-app** to both GIT, and NPM.
 
-                                                         
 
-After *that*, call `cupboard init`, and the project will be available globally via the `cupboard` CLI.
+	                                                                                                        
 
 ## Commands           
                   
@@ -44,7 +49,14 @@ been updated.
 - `cbd publish [PROJ_NAME]` - publishes given application
 - `cbd [COMMAND] [PROJ_NAME]` - custom command given for target application
 - `cbd open [PROJ_NAME]` - open a project in finder    
-- `cbd dir [PROJ_NAME]` - returns the directory of the target app
+- `cbd dir [PROJ_NAME]` - returns the directory of the target app      
+
+
+## Default Template
+
+- `git+npm`
+- `git`
+- `npm`
 
 
 ## Useful tricks
