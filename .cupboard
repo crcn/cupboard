@@ -1,5 +1,5 @@
 [project]
 name = cupboard
 [commands]
-publish = git push origin master, npm publish
+publish = git push origin master, npm publish --force
 commit = git add ., git commit -m $@

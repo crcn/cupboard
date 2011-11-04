@@ -49,7 +49,7 @@ After *that*, call `cupboard init`, and the project will be available globally v
 been updated.                                                                                   
 - `cupboard publish [APP_NAME]` - publishes given application
 - `cupboard [COMMAND] [APP_NAME]` - custom command given for target application
-- `cupboard open [APP_NAME]` - open a project
+- `cupboard open [APP_NAME]` - open a project in finder
          
 
 
