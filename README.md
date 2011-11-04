@@ -15,8 +15,8 @@ Managing a kajillion repositories is a pain in the ass.
 - Customizable actions: publish, bump, etc.      
 - Push to both npm, and git with one command. 
 - Ability to call a command against multiple projects. e.g:
-	- `cupboard ignore --all node_modules` adds node_modules to all .gitignore files.
-	- `cupboard open my-app+another-app` opens the given applications in finder.
+	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
+	- `cbd open my-app+another-app` opens the given applications in finder.
                                             
 
 ## To-Do
