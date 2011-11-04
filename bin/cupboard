@@ -12,19 +12,32 @@ while(args.length)
 	
 	switch(arg)
 	{
+	
 		case "list":  
 	   	case "ls":
 			cupboard.list();
 		break;  
+		
+		case "add-template":
+			cupboard.addTemplate(args.shift(), args.shift());
+		break;
+		
+		case "templates":
+			cupboard.listTemplates();
+		break;
+		
 		case "count":
 			cupboard.count();
 		break;
+		
 		case "updates": 
 			cupboard.updates();
-		break;    
+		break;  
+		  
 		case "init":     
 			cupboard.init(args.shift());
 		break;
+		
 		case "remove": 
 		case "rm":
 			cupboard.remove(args.shift());
