@@ -50,13 +50,13 @@
 			<key>filename</key>
 			<string>package.json</string>
 			<key>lastUsed</key>
-			<date>2011-11-04T05:36:41Z</date>
+			<date>2011-11-04T06:57:36Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>README.md</string>
 			<key>lastUsed</key>
-			<date>2011-11-04T05:43:33Z</date>
+			<date>2011-11-04T06:57:36Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -64,7 +64,7 @@
 			<key>filename</key>
 			<string>.cupboard</string>
 			<key>lastUsed</key>
-			<date>2011-11-04T05:40:57Z</date>
+			<date>2011-11-04T06:52:30Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -104,14 +104,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>75</integer>
+				<integer>58</integer>
 				<key>line</key>
 				<integer>74</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>45</integer>
+			<integer>2</integer>
 		</dict>
 		<key>bin/cupboard</key>
 		<dict>
@@ -120,7 +120,7 @@
 				<key>column</key>
 				<integer>19</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>19</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -188,14 +188,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>20</integer>
+				<integer>50</integer>
 				<key>line</key>
-				<integer>97</integer>
+				<integer>114</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>39</integer>
+			<integer>71</integer>
 		</dict>
 		<key>lib/commands/open.js</key>
 		<dict>
@@ -556,9 +556,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>19</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
