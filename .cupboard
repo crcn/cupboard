@@ -2,4 +2,4 @@
 name = cupboard
 [commands]
 publish = git push origin master, npm publish
-commit = git add ., git commit $@
+commit = git add ., git commit -m $@
