@@ -16,6 +16,9 @@ while(args.length)
 	   	case "ls":
 			cupboard.list();
 		break;  
+		case "count":
+			cupboard.count();
+		break;
 		case "updates": 
 			cupboard.updates();
 		break;    
