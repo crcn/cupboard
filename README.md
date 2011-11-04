@@ -27,6 +27,9 @@ Managing a kajillion repositories is a pain in the ass.
 - honor .ignore files
 - use directory as default name for program
 - ability to set default template
+- ability to open project file via `cbd open project-name` vs dir. e.g: opening textmate project
+- create projects via cupboard? e.g: xcodeproj, tmproj
+- ability to specify global commands
 
 ## Installation 
 
