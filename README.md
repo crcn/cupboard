@@ -6,6 +6,12 @@ Repository management (GIT/NPM) for your projects
 - All projects accessible via the `cupboard` cli.
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.    
+                                            
+
+## To-Do
+
+- --all flag       
+- ability to add custom templates
 
 ## Installation 
 
@@ -16,29 +22,14 @@ Repository management (GIT/NPM) for your projects
                           
 For each project you want to use in cupboard, simply call:
                                             
-	cupboard init                       
+	cupboard init               
 	
-the `init` command will walk you through a setup process. But if you're like me, you'll want more granular control over the cupboard script. In your root project directory, create a file called `.cupboard`, and add some config settings similar to the following chunk:
+	
+That command alone will use the *default* cupboard template. You can of course use other templates. Right now they include the following: `git`, `git+npm`, and `npm`. 
+	
+the `init` command will walk you through a setup process. There are a few built-in templates you can use, such as `npm`, and 
 
-```ini                                           
-
-[project]
-name=my app name
-
-[commands]    
-                                                 
-# 
-# publishes the project to these locations
-publish=npm publish, git push origin master
-
-# bumps the version of a given app
-bump=npm bump         
-
-# whatever command you want...
-XXXX=whatever custom command you want
-                      
-
-```                                                          
+                                                         
 
 After *that*, call `cupboard init`, and the project will be available globally via the `cupboard` CLI.
 
@@ -47,17 +38,22 @@ After *that*, call `cupboard init`, and the project will be available globally v
 - `cupboard init` - adds an project to cupboard.
 - `cupboard list` - list all the registered projects. Also contains details of what projects have
 been updated.                                                                                   
-- `cupboard publish [APP_NAME]` - publishes given application
-- `cupboard [COMMAND] [APP_NAME]` - custom command given for target application
-- `cupboard open [APP_NAME]` - open a project in finder
-         
+- `cupboard publish [PROJ_NAME]` - publishes given application
+- `cupboard [COMMAND] [PROJ_NAME]` - custom command given for target application
+- `cupboard open [PROJ_NAME]` - open a project in finder    
+- `cupboard dir [PROJ_NAME]` - returns the directory of the target app
 
 
-## Additional flags
+## Useful tricks
 
-- `--all` - execute command for all applications in cupboard. e.g: 
+the following chunk will change the current working directory to the application specified:   
 
-	cupboard publish --all
+````bash
+
+cd `cupboard dir my-project-name`
+
+````
+              
 
                        
 

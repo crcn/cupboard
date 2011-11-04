@@ -16,7 +16,7 @@ while(args.length)
 			cupboard.list();
 		break;      
 		case "init":     
-			cupboard.init();
+			cupboard.init(args.shift());
 		break;
 		case "remove": 
 		case "rm":
