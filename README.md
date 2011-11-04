@@ -66,7 +66,7 @@ publish=my publish commands separated by commas
 XXXX=whatever command I want...
 
 ````                                                                                                        
-
+                             
 ## Commands           
                   
 - `cbd init` - adds an project to cupboard.
