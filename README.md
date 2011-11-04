@@ -8,7 +8,8 @@ Repository management (GIT/NPM) for your projects
            
 - All projects accessible via the `cupboard` cli.
 - easily identify which projects have been updated. 
-- Customizable actions: publish, bump, etc.    
+- Customizable actions: publish, bump, etc.      
+- Push to both npm, and git with one command.
                                             
 
 ## To-Do
