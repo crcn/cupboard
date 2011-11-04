@@ -80,11 +80,12 @@ been updated.
 
 the following chunk will change the current working directory to the application specified:   
 
-````bash
-
+````bash       
 cd `cbd dir my-project-name`
+````      
+            
 
-````     
+
 
 
               
