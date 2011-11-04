@@ -40,7 +40,7 @@ will call the publish command specified in git+npm, which happens to commit, and
 
 
 
-If you want more granular control over your cupboard configurations, just edit the `.cupboard`. A config file looks like this:
+If you want more granular control over your cupboard configurations, just edit the `.cupboard` in your root project directory. A config file looks like this:
 
 ````ini
     
@@ -52,10 +52,7 @@ name=project-name
 publish=my publish commands separated by commas
 XXXX=whatever command I want...
 
-````
-
-
-	                                                                                                        
+````                                                                                                        
 
 ## Commands           
                   
