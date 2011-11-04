@@ -12,9 +12,13 @@ while(args.length)
 	
 	switch(arg)
 	{
-		case "list": 
+		case "list":  
+	   	case "ls":
 			cupboard.list();
-		break;      
+		break;  
+		case "updates": 
+			cupboard.updates();
+		break;    
 		case "init":     
 			cupboard.init(args.shift());
 		break;
