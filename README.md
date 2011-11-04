@@ -6,7 +6,7 @@ Repository management (GIT/NPM) for your projects
 
 ## Why?                                                     
        
-Managing 50+ repositories is a pain in the ass. 
+Managing a kajillion repositories is a pain in the ass. 
 
 ## Features                                
            
