@@ -20,7 +20,7 @@ For each project you want to use in cupboard, simply call:
 	
 the `init` command will walk you through a setup process. But if you're like me, you'll want more granular control over the cupboard script. In your root project directory, create a file called `.cupboard`, and add some config settings similar to the following chunk:
 
-```ini    
+```ini                                           
 
 [project]
 name=my app name
@@ -49,6 +49,7 @@ After *that*, call `cupboard init`, and the project will be available globally v
 been updated.                                                                                   
 - `cupboard publish [APP_NAME]` - publishes given application
 - `cupboard [COMMAND] [APP_NAME]` - custom command given for target application
+- `cupboard open [APP_NAME]` - open a project
          
 
 

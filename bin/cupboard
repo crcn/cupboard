@@ -1,1 +1,36 @@
 #!/usr/bin/env node
+                          
+
+var args = process.argv.concat().splice(2),
+ops = {},
+cupboard = require('../lib/cupboard');   
+                    
+
+while(args.length)
+{                    
+	var arg = args.shift();
+	
+	switch(arg)
+	{
+		case "list": 
+			cupboard.list();
+		break;      
+		case "init":     
+			cupboard.init();
+		break;
+		case "remove": 
+		case "rm":
+			cupboard.remove(args.shift());
+		break;
+		
+		default:           
+			ops.command = arg;
+			ops.target = args.shift(); 
+			ops.params = args.concat();  
+	    break;
+	}                  
+	
+	if(ops.command) break;
+}    
+
+if(ops.command) cupboard.execute(ops);

@@ -1,0 +1,313 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.97
+info using node@v0.4.12
+verbose config file /var/root/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Repo management for your projects (git, npm, etc.)',
+silly testEngine   version: '0.0.1',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   engines: { node: '~0.4.12' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.0',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.0.10',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1' },
+silly testEngine   bin: { cupboard: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'cupboard@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.97',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/craigcondon/Developer/Public/cupboard/package.json
+verbose loadDefaults cupboard@0.0.1
+info prepublish cupboard@0.0.1
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', href: '.' }
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Repo management for your projects (git, npm, etc.)',
+silly testEngine   version: '0.0.1',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   engines: { node: '~0.4.12' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.0',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.0.10',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1' },
+silly testEngine   bin: { cupboard: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'cupboard@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.97',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/craigcondon/Developer/Public/cupboard',
+silly testEngine   bundleDependencies: [] }
+verbose caching package.json
+verbose loadDefaults cupboard@0.0.1
+verbose pack /Users/craigcondon/Developer/Public/cupboard /tmp/npm-1320376818938/1320376818938-0.9475957530084997/tmp.tgz
+silly testEngine { name: 'celeri',
+silly testEngine   description: 'CLI lib',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/celeri.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: { structr: '0.0.10', beanpole: '*', colors: '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _id: 'celeri@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.97',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/craigcondon/Developer/Public/celeri/package.json
+verbose loadDefaults celeri@0.1.0
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1320376818938'
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1320376818938/1320376818938-0.9475957530084997'
+verbose mkdir done: /tmp/npm-1320376818938/1320376818938-0.9475957530084997 755
+verbose mkdir'ed /tmp/npm-1320376818938/1320376818938-0.9475957530084997
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/craigcondon/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm'
+verbose mkdir done: /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/tmp.tgz',
+silly spawning     '-o' ],
+silly spawning   '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm' ]
+silly tar err x cupboard/.cupboard
+silly tar err x cupboard/.gitignore
+silly tar err x cupboard/cupboard.tmproj
+silly tar err x cupboard/package.json
+silly tar err x cupboard/README.md
+silly tar err x cupboard/bin/cupboard
+silly tar err x cupboard/lib/cupboard.js
+silly tar err x cupboard/lib/exec.js
+silly tar err x cupboard/lib/queue.js
+silly tar err x cupboard/lib/utils.js
+silly tar err x cupboard/lib/commands/bump.js
+silly tar err x cupboard/lib/commands/execute.js
+silly tar err x cupboard/lib/commands/init.js
+silly tar err x cupboard/lib/commands/list.js
+silly tar err x cupboard/lib/commands/publish.js
+silly tar err x cupboard/lib/commands/remove.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/.cupboard
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/.gitignore
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/cupboard.tmproj
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/package.json
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/README.md
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/bin
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/bin/cupboard
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/cupboard.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/exec.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/queue.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/utils.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/bump.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/execute.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/init.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/list.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/publish.js
+silly asyncMap in gTP /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard/lib/commands/remove.js
+verbose gunzed /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard
+verbose rm'ed /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package
+verbose renamed [ '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/___package.npm/cupboard',
+verbose renamed   '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Repo management for your projects (git, npm, etc.)',
+silly testEngine   version: '0.0.1',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   engines: { node: '~0.4.12' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.0',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.0.10',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1' },
+silly testEngine   bin: { cupboard: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'cupboard@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.97',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package' }
+verbose caching /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package/package.json
+verbose loadDefaults cupboard@0.0.1
+verbose tarball contents [ 'package' ]
+verbose from cache /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package/package.json
+verbose pack /tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents/package /var/root/.npm/cupboard/0.0.1/package.tgz
+verbose mkdir'ed /var/root/.npm/cupboard/0.0.1
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/tmp/npm-1320376818938/1320376818938-0.9475957530084997/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/root/.npm/cupboard/0.0.1/___package.npm'
+verbose mkdir done: /var/root/.npm/cupboard/0.0.1/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /var/root/.npm/cupboard/0.0.1/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/root/.npm/cupboard/0.0.1/package.tgz',
+silly spawning     '-o' ],
+silly spawning   '/var/root/.npm/cupboard/0.0.1/___package.npm' ]
+silly tar err x package/.cupboard
+silly tar err x package/.gitignore
+silly tar err x package/cupboard.tmproj
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/bin/cupboard
+silly tar err x package/lib/cupboard.js
+silly tar err x package/lib/exec.js
+silly tar err x package/lib/queue.js
+silly tar err x package/lib/utils.js
+silly tar err x package/lib/commands/bump.js
+silly tar err x package/lib/commands/execute.js
+silly tar err x package/lib/commands/init.js
+silly tar err x package/lib/commands/list.js
+silly tar err x package/lib/commands/publish.js
+silly tar err x package/lib/commands/remove.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/.cupboard
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/.gitignore
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/cupboard.tmproj
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/package.json
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/README.md
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/bin
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/bin/cupboard
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/cupboard.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/exec.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/queue.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/utils.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/bump.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/execute.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/init.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/list.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/publish.js
+silly asyncMap in gTP /var/root/.npm/cupboard/0.0.1/___package.npm/package/lib/commands/remove.js
+verbose gunzed /var/root/.npm/cupboard/0.0.1/___package.npm/package
+verbose rm'ed /var/root/.npm/cupboard/0.0.1/package
+verbose renamed [ '/var/root/.npm/cupboard/0.0.1/___package.npm/package',
+verbose renamed   '/var/root/.npm/cupboard/0.0.1/package' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Repo management for your projects (git, npm, etc.)',
+silly testEngine   version: '0.0.1',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   engines: { node: '~0.4.12' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.0',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.0.10',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1' },
+silly testEngine   bin: { cupboard: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'cupboard@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.97',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '2cd7c536ac9fc522d4d54e3dc065d49061333eff',
+silly testEngine      tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.0.1.tgz' } }
+verbose caching /var/root/.npm/cupboard/0.0.1/package/package.json
+verbose loadDefaults cupboard@0.0.1
+silly updated sha bytes 10240
+info shasum 2cd7c536ac9fc522d4d54e3dc065d49061333eff
+info shasum /var/root/.npm/cupboard/0.0.1/package.tgz
+verbose from cache /var/root/.npm/cupboard/0.0.1/package/package.json
+verbose chmod /var/root/.npm/cupboard/0.0.1/package.tgz 644
+verbose chown [ '/var/root/.npm/cupboard/0.0.1/package.tgz', 0, 0 ]
+silly publish { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly publish   name: 'cupboard',
+silly publish   description: 'Repo management for your projects (git, npm, etc.)',
+silly publish   version: '0.0.1',
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/spiceapps/cupboard.git' },
+silly publish   engines: { node: '~0.4.12' },
+silly publish   dependencies: 
+silly publish    { gumbo: '0.1.0',
+silly publish      colors: '0.5.1',
+silly publish      celeri: '0.0.10',
+silly publish      ini: '1.0.1',
+silly publish      findit: '0.1.1',
+silly publish      'relative-date': '1.1.1' },
+silly publish   bin: { cupboard: './bin/cupboard' },
+silly publish   devDependencies: {},
+silly publish   _id: 'cupboard@0.0.1',
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.97',
+silly publish   _nodeVersion: 'v0.4.12',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '2cd7c536ac9fc522d4d54e3dc065d49061333eff',
+silly publish      tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.0.1.tgz' } }
+verbose PUT cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+ERR! Failed PUT response undefined
+ERR! Error: Cannot insert data into the registry without authorization
+ERR! See: npm-adduser(1)
+ERR!     at regRequest (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:78:15)
+ERR!     at PUT (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:218:3)
+ERR!     at Object.publish (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/publish.js:60:3)
+ERR!     at regPublish (/usr/local/lib/node_modules/npm/lib/publish.js:146:12)
+ERR!     at /usr/local/lib/node_modules/npm/lib/publish.js:84:12
+ERR!     at preBuild (/usr/local/lib/node_modules/npm/lib/publish.js:90:19)
+ERR!     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:82:3)
+ERR!     at Array.1 (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+ERR!     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:13)
+ERR!     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 10.7.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /Users/craigcondon/Developer/Public/cupboard
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.97
+verbose exit [ 1, true ]
