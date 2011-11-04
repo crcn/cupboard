@@ -23,6 +23,8 @@ Managing a kajillion repositories is a pain in the ass.
 - ability to list available templates
 - help menu
 - honor .ignore files
+- use directory as default name for program
+- ability to set default template
 
 ## Installation 
 
