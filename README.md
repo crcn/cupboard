@@ -13,7 +13,10 @@ Managing a kajillion repositories is a pain in the ass.
 - All projects accessible via the `cupboard` cli.
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
-- Push to both npm, and git with one command.
+- Push to both npm, and git with one command. 
+- Ability to call a command against multiple projects. e.g:
+	- `cupboard ignore * node_modules` adds node_modules to all .gitignore files.
+	- `cupboard open my-app+another-app` opens the given applications in finder.
                                             
 
 ## To-Do
