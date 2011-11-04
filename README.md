@@ -20,7 +20,7 @@ Repository management (GIT/NPM) for your projects
 
 ## Usage                                   
                           
-For each project you want to use in cupboard, simply call:
+For each project you want to use in cupboard, simply this command in your project directory:
                                             
 	cupboard init               
 
@@ -28,15 +28,31 @@ That command will run you through the basic setup. You can also used pre-defined
     
 	cupboard init git+npm
 	                         
-will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore` For example:
+will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore`. For example:
 
 	cupboard ignore my-app my/file/to/ignore
 	
-will append **my/file/to/ignore** to **.gitignore** because **ignore** was specified in the **git+npm** template. Here's another example:
+will append my/file/to/ignore to .gitignore. Here's another example:
 
  	cupboard publish my-app "my commit message"
                    
-will call the **publish** command specified in git+npm, which happens to commit, and publish **my-app** to both GIT, and NPM.
+will call the publish command specified in git+npm, which happens to commit, and push my-app to both GIT, and NPM.       
+
+
+
+If you want more granular control over your cupboard configurations, just edit the `.cupboard`. A config file looks like this:
+
+````ini
+    
+[project]
+name=project-name
+
+
+[commands]
+publish=my publish commands separated by commas
+XXXX=whatever command I want...
+
+````
 
 
 	                                                                                                        
@@ -65,7 +81,7 @@ the following chunk will change the current working directory to the application
 
 ````bash
 
-cd `cupboard dir my-project-name`
+cd `cbd dir my-project-name`
 
 ````
               
