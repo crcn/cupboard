@@ -1,8 +1,12 @@
 Repository management (GIT/NPM) for your projects       
 
 
-![Alt screenshot](http://i.imgur.com/YWIey.png)
-                                           
+![Alt screenshot](http://i.imgur.com/YWIey.png)    
+
+
+## Why?                                                     
+       
+Have you seen how many public repositories I have? It's become a pain to manage - especially when I forget to commit code (to NPM, github, etc.). I built this utility to help manage my projects. 
 
 ## Features                                
            
