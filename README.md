@@ -37,19 +37,19 @@ Managing a kajillion repositories is a pain in the ass.
                           
 For each project you want to use in cupboard, simply call this command in your project directory:
                                             
-	cupboard init               
+	cbd init               
 
 That command will run you through the basic setup. You can also used pre-defined templates to speed things up. For instance:
     
-	cupboard init git+npm
+	cbd init git+npm
 	                         
 will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore`. For example:
 
-	cupboard ignore my-app my/file/to/ignore
+	cbd ignore my-app my/file/to/ignore
 	
 will append my/file/to/ignore to .gitignore. Here's another example:
 
- 	cupboard publish my-app "my commit message"
+ 	cbd publish my-app "my commit message"
                    
 will call the publish command specified in the template git+npm, which happens to commit, and push my-app to both GIT, and NPM.       
 
