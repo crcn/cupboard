@@ -10,7 +10,7 @@ Managing a kajillion repositories is a pain in the ass.
 
 ## Features                                
            
-- All projects accessible via the `cupboard` cli.
+- All projects accessible via the `cbd` cli.
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
 - Push to both npm, and git with one command. 
@@ -21,7 +21,6 @@ Managing a kajillion repositories is a pain in the ass.
 
 ## To-Do
 
-- --all flag       
 - ability to add custom templates e.g: `cbd add-template /path/to/template.conf`
 - ability to list available templates
 - help menu
