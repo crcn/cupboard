@@ -17,7 +17,8 @@
 	"ini":"1.0.1",
 	"findit":"0.1.1",
 	"relative-date": "1.1.1",
-	"underscore":"*"
+	"underscore":"*",
+	"yaconfig":"*"
   },    
   "bin": {
     "cbd": "./bin/cupboard"
