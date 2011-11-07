@@ -4,3 +4,4 @@ name = cupboard
 publish = npm publish --force, git add -A, git commit -m "$@", git push origin master
 ignore = echo $@ >> .gitignore
 proj=open cupboard.tmproj
+github= open https://github.com/spiceapps/cupboard
