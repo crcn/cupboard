@@ -27,7 +27,6 @@ This is a quick (few hours), and rough implementation. It works but the code 'ai
 
 - ability to add custom templates e.g: `cbd add-template /path/to/template.conf`
 - ability to list available templates
-- help menu
 - honor .ignore files
 - use directory as default name for program
 - ability to set default template
