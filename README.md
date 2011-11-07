@@ -3,6 +3,10 @@ Repository management (GIT/NPM) for your projects
 
 ![Alt screenshot](http://i.imgur.com/YWIey.png)    
 
+## Requirements
+
+- node.js
+- npm 
 
 ## Why?                                                     
        
