@@ -31,6 +31,7 @@ Managing a kajillion repositories is a pain in the ass.
 - create projects via cupboard? e.g: xcodeproj, tmproj
 - ability to specify global commands.
 - ability to point to template
+- ability to see list of change
 
 ## Installation 
 

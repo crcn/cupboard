@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/commands/dir.js</string>
+	<string>README.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -56,7 +56,9 @@
 			<key>filename</key>
 			<string>README.md</string>
 			<key>lastUsed</key>
-			<date>2011-11-04T21:56:56Z</date>
+			<date>2011-11-07T19:03:57Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -102,9 +104,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>44</integer>
 				<key>line</key>
-				<integer>74</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -144,9 +146,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>27</integer>
+				<integer>36</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>10</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
