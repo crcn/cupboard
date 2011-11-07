@@ -3,10 +3,7 @@ Repository management (GIT/NPM) for your projects
 
 ![Alt screenshot](http://i.imgur.com/YWIey.png)    
 
-## Requirements
 
-- node.js
-- npm 
 
 ## Why?                                                     
        
@@ -26,21 +23,10 @@ This is a quick (few hours), and rough implementation. It works but the code 'ai
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
 	- `cbd open my-app+another-app` opens the given applications in finder.
                                             
+## Requirements
 
-## To-Do
-
-- ability to add custom templates e.g: `cbd add-template /path/to/template.conf`
-- ability to list available templates
-- honor .ignore files
-- use directory as default name for program
-- ability to set default template
-- ability to open project file via `cbd open project-name` vs dir. e.g: opening textmate project
-- create projects via cupboard? e.g: xcodeproj, tmproj
-- ability to specify global commands.
-- ability to point to template
-- ability to see list of change
-- ability to select specific files to commit
-- change publish to commit+publish
+- node.js
+- npm
 
 ## Installation 
 
