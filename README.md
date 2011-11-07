@@ -86,6 +86,7 @@ open-project=open my-project.tmproj
 - `cbd open [PROJ_NAME]` - Open a project in finder.    
 - `cbd dir [PROJ_NAME]` - Returns the directory of the target app.     
 - `cbd details [PROJ_NAME]` - show details of given project.
+' `cbd untouch [PROJ_NAME]` - sets the given project to "updated"
 - `cbd [COMMAND] [PROJ_NAME]` - Custom command given for target application. Some examples:
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
