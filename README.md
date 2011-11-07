@@ -32,7 +32,6 @@ Managing a kajillion repositories is a pain in the ass.
 - ability to specify global commands.
 - ability to point to template
 - ability to see list of change
-- `cbd details [PROJECT_NAME]` show details of given project
 - ability to select specific files to commit
 - change publish to commit+publish
 
@@ -86,6 +85,7 @@ open-project=open my-project.tmproj
 - `cbd publish [PROJ_NAME]` - Publishes given application.                        
 - `cbd open [PROJ_NAME]` - Open a project in finder.    
 - `cbd dir [PROJ_NAME]` - Returns the directory of the target app.     
+- `cbd details [PROJ_NAME]` - show details of given project.
 - `cbd [COMMAND] [PROJ_NAME]` - Custom command given for target application. Some examples:
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
