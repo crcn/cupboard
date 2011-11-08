@@ -18,15 +18,15 @@ This is a quick (few hours), and rough implementation. It works but the code 'ai
 - All projects accessible via the `cbd` cli.
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
-- Push to both npm, and git with one command. 
+- Push to both NPM, and GIT with one command. 
 - Ability to call a command against multiple projects. e.g:
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
 	- `cbd open my-app+another-app` opens the given applications in finder.
                                             
 ## Requirements
 
-- node.js
-- npm
+- Node.js
+- NPM
 
 ## Installation 
 
