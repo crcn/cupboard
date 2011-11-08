@@ -25,14 +25,13 @@ This is a quick (few hours), and rough implementation. It works but the code 'ai
                                             
 ## Requirements
 
-- Node.js
-- NPM
+- [Node.js](http://nodejs.org)
+- [NPM](http://npmjs.org/)
 
 ## Installation 
 
 	npm install cupboard
-                             
-
+	
 ## Usage                                   
                           
 For each project you want to use in cupboard, simply call this command in your project directory:
