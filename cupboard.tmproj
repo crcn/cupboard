@@ -3,110 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>README.md</string>
+	<string>lib-new/projects/model.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>expanded</key>
 			<true/>
 			<key>name</key>
-			<string>bin</string>
+			<string>cupboard</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
-			<string>bin</string>
-		</dict>
-		<dict>
-			<key>expanded</key>
-			<true/>
-			<key>name</key>
-			<string>lib</string>
-			<key>regexFolderFilter</key>
-			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>sourceDirectory</key>
-			<string>lib</string>
-		</dict>
-		<dict>
-			<key>expanded</key>
-			<true/>
-			<key>name</key>
-			<string>node_modules</string>
-			<key>regexFolderFilter</key>
-			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>sourceDirectory</key>
-			<string>node_modules</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>.DS_Store</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>.gitignore</string>
-			<key>lastUsed</key>
-			<date>2011-11-04T05:12:43Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>package.json</string>
-			<key>lastUsed</key>
-			<date>2011-11-07T21:39:41Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>README.md</string>
-			<key>lastUsed</key>
-			<date>2011-11-07T21:49:28Z</date>
-			<key>selected</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>.cupboard</string>
-			<key>lastUsed</key>
-			<date>2011-11-07T20:54:08Z</date>
+			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>.cupboard</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>.gitignore</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>README.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>28</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -121,6 +43,48 @@
 				<integer>22</integer>
 				<key>line</key>
 				<integer>20</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>lib-new/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>lib-new/projects/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>lib-new/projects/model.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>6</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -216,14 +180,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>54</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>39</integer>
+				<integer>83</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>83</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>38</integer>
+				<key>line</key>
+				<integer>83</integer>
+			</dict>
 		</dict>
 		<key>lib/commands/list.js</key>
 		<dict>
@@ -288,9 +268,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>31</integer>
+				<integer>82</integer>
 				<key>line</key>
-				<integer>6</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -346,14 +326,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>113</integer>
+				<integer>9</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>57</integer>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>41</integer>
+				<key>line</key>
+				<integer>18</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
 		</dict>
 		<key>lib/exec.js</key>
 		<dict>
@@ -727,6 +723,122 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node/balance/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>78</integer>
+		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node/balance/ww/webworker-child.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>23</integer>
+				<key>line</key>
+				<integer>18</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node/balance/ww/webworker-util.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>23</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node/cli/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node/log/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/node_modules/beanpole/node_modules/sk/node_modules/htmlparser/testdata/api.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>1105</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>1076</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
+				<integer>1105</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>1105</integer>
+			</dict>
+		</dict>
 		<key>node_modules/celeri/package.json</key>
 		<dict>
 			<key>caret</key>
@@ -811,6 +923,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>node_modules/gumbo/node_modules/guava/lib/node/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>-1</integer>
+		</dict>
 		<key>node_modules/gumbo/package.json</key>
 		<dict>
 			<key>caret</key>
@@ -872,9 +998,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -884,61 +1010,17 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>lib/cupboard.js</string>
-		<string>lib/commands/help.js</string>
-		<string>node_modules/celeri/examples/exec.js</string>
-		<string>node_modules/celeri/lib/modules/table.js</string>
-		<string>node_modules/celeri/examples/auth.js</string>
-		<string>node_modules/celeri/lib/modules/backspace.js</string>
-		<string>node_modules/celeri/lib/modules/auth.js</string>
-		<string>node_modules/celeri/lib/modules/tree.js</string>
-		<string>node_modules/celeri/examples/confirm.js</string>
-		<string>node_modules/celeri/examples/table.js</string>
-		<string>node_modules/celeri/lib/utils.js</string>
-		<string>node_modules/celeri/examples/tree.js</string>
-		<string>node_modules/celeri/lib/modules/help.js</string>
-		<string>lib/commands/templates.js</string>
-		<string>lib/templates/default.conf</string>
-		<string>lib/templates/tpl-ref.conf</string>
-		<string>lib/templates/git+npm.conf</string>
-		<string>lib/templates/npm.conf</string>
-		<string>lib/templates/git.conf</string>
-		<string>lib/commands/execute.js</string>
-		<string>lib/commands/remove.js</string>
-		<string>lib/commands/dir.js</string>
-		<string>lib/utils.js</string>
-		<string>lib/commands/init.js</string>
-		<string>node_modules/celeri/package.json</string>
-		<string>node_modules/celeri/README.md</string>
-		<string>node_modules/celeri/MIT-LICENSE.txt</string>
-		<string>node_modules/celeri/lib/index.js</string>
-		<string>lib/commands/list.js</string>
-		<string>node_modules/findit/index.js</string>
-		<string>lib/commands/open.js</string>
-		<string>lib/exec.js</string>
-		<string>lib/commands/count.js</string>
-		<string>lib/commands/bump.js</string>
-		<string>lib/commands/publish.js</string>
-		<string>lib/queue.js</string>
-		<string>.gitignore</string>
-		<string>node_modules/ini/package.json</string>
-		<string>README.md</string>
-		<string>lib/commands/help.txt</string>
-		<string>lib/commands/untouch.js</string>
-		<string>bin/cupboard</string>
-		<string>node_modules/gumbo/README.md</string>
-		<string>node_modules/gumbo/package.json</string>
-		<string>node_modules/ini/README.md</string>
 		<string>package.json</string>
-		<string>node_modules/findit/package.json</string>
-		<string>node_modules/colors/colors.js</string>
-		<string>node_modules/colors/package.json</string>
-		<string>node_modules/ini/ini.js</string>
-		<string>.cupboard</string>
+		<string>lib/commands/remove.js</string>
+		<string>lib-new/index.js</string>
+		<string>lib-new/projects/model.js</string>
+		<string>lib-new/projects/index.js</string>
+		<string>lib/cupboard.js</string>
+		<string>README.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1464, 1024}}</string>
+	<string>{{0, 4}, {1224, 874}}</string>
 </dict>
 </plist>
