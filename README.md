@@ -11,7 +11,7 @@ Managing a kajillion repositories is a pain in the ass.
 
 ### Note:
 
-This is a quick (few hours), and rough implementation. It works but the code 'aint pretty. I'll clean it up once I've put more thought into the architecture.
+#### This is a quick (few hours), and rough implementation. It works but the code 'aint pretty. I'll clean it up once I've put more thought into the architecture.
 
 ## Features                                
            
