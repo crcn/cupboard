@@ -24,6 +24,9 @@ Repository management (GIT/NPM) for your projects
 
 	npm install cupboard
 	
+## Plugins
+
+- [cupboard.github](http://github.com/spiceapps/cupboard.github)
 	
 ## Basic Usage                                   
                           
@@ -102,7 +105,8 @@ I prefer method one since it's a bit more portable.
 
 
 ## Writing Plugins
-            
+
+- TODO - see [github](http://github.com/spiceapps.com/cupboard.github) plugin for now.
 
 
 
