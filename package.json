@@ -10,7 +10,7 @@
   "dependencies": {
     "gumbo":"0.1.2",
     "colors":"0.5.1",
-	"celeri":"0.1.0",
+	"celeri":"0.1.x",
 	"ini":"1.0.1",
 	"findit":"0.1.1",
 	"relative-date": "1.1.1",

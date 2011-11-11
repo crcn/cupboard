@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.projects/model.js</string>
+	<string>lib/beans/cbd.command.helpmenu/index.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -124,14 +124,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>5</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>93</integer>
+				<integer>21</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>51</integer>
+			<integer>6</integer>
 		</dict>
 		<key>lib/beans/cbd.command.install/index.js</key>
 		<dict>
@@ -450,14 +450,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>52</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>331</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>312</integer>
+			<integer>0</integer>
 		</dict>
 		<key>node_modules/celeri/lib/modules/auth.js</key>
 		<dict>
@@ -522,30 +522,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>52</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>215</integer>
+				<integer>130</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>182</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>50</integer>
-				<key>line</key>
-				<integer>215</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>58</integer>
-				<key>line</key>
-				<integer>215</integer>
-			</dict>
+			<integer>101</integer>
 		</dict>
 		<key>node_modules/celeri/lib/modules/tree.js</key>
 		<dict>
@@ -559,7 +543,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>8</integer>
+			<integer>20</integer>
 		</dict>
 		<key>node_modules/celeri/lib/utils.js</key>
 		<dict>
@@ -951,6 +935,9 @@
 		<string>node_modules/chowder/lib/evaluator.js</string>
 		<string>node_modules/chowder/lib/loaders/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>
+		<string>node_modules/celeri/lib/modules/tree.js</string>
+		<string>node_modules/celeri/lib/modules/table.js</string>
+		<string>node_modules/celeri/lib/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
 		<string>lib/index.js</string>
 		<string>lib/utils/printMessages.js</string>
@@ -968,6 +955,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1224, 874}}</string>
+	<string>{{-11, -88}, {1224, 874}}</string>
 </dict>
 </plist>
