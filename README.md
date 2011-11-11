@@ -4,11 +4,6 @@ Repository management (GIT/NPM) for your projects
 ![Alt screenshot](http://i.imgur.com/YWIey.png)    
 
 
-
-## Use cupboard if...                                                     
-      
-- You have many projects and it's becom
-
 ## Features                                
            
 - All projects accessible via the `cbd` cli.
