@@ -33,6 +33,10 @@ Repository management (GIT/NPM) for your projects
 For each project you want to use in cupboard, simply call this command in your project directory:
                                             
 	cbd init               
+	
+You can also provide a path:
+
+	cbd init /path/to/project
 
 That'll setup a basic GIT configuration. There are however a few additional options. If you want to add NPM and GIT, just swap in the template like so:
 
