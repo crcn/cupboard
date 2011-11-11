@@ -64,7 +64,7 @@ When writing custom templates, or any custom configuration, they should be place
 
 You can easily specify custom commands for each project. There are few ways to do so:
 
-1. create a `/path/to/project/.cupboard` file. An example might be:
+- Create a `/path/to/project/.cupboard` file. An example might be:
 
 ```ini
 
@@ -73,7 +73,7 @@ my_custom_command=args
 
 ```
 
-2. Modify the project setting under `~/.cupboard/projects.conf`. Like so:
+-  Modify the project setting under `~/.cupboard/projects.conf`. Like so:
 
 ````ini
 
