@@ -9,10 +9,6 @@ Repository management (GIT/NPM) for your projects
        
 Managing a kajillion repositories is a pain in the ass. 
 
-## Note:
-
-### This is a quick (few hours), and rough implementation. It works but the code 'aint pretty. I'll clean it up once I've put more thought into the architecture.
-
 ## Features                                
            
 - All projects accessible via the `cbd` cli.
@@ -32,15 +28,12 @@ Managing a kajillion repositories is a pain in the ass.
 
 	npm install cupboard
 	
-## Usage                                   
+## Basic Usage                                   
                           
 For each project you want to use in cupboard, simply call this command in your project directory:
                                             
 	cbd init               
 
-That command will run you through the basic setup. You can also used pre-defined templates to speed things up. For instance:
-    
-	cbd init git+npm
 	                         
 will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore`. For example:
 
@@ -69,17 +62,17 @@ open-project=open my-project.tmproj
 
 ````                                                                                                        
                              
-## Commands           
+## Default Commands           
                   
 - `cbd init` - Adds an project to cupboard.
 - `cbd list` - Lit all the projects. Also contains details of what projects have been updated.         
 - `cbd updates` - List projects with updates.                                                                          
-- `cbd publish [PROJ_NAME]` - Publishes given application.                        
-- `cbd open [PROJ_NAME]` - Open a project in finder.    
-- `cbd dir [PROJ_NAME]` - Returns the directory of the target app.     
-- `cbd details [PROJ_NAME]` - show details of given project.
-' `cbd untouch [PROJ_NAME]` - sets the given project to "updated"
-- `cbd [COMMAND] [PROJ_NAME]` - Custom command given for target application. Some examples:
+- `cbd publish <proj>` - Publishes given application.                        
+- `cbd open <proj>` - Open a project in finder.    
+- `cbd dir <proj>` - Returns the directory of the target app.     
+- `cbd details <proj>` - show details of given project.
+' `cbd untouch <proj>` - sets the given project to "updated"
+- `cbd <cmd> <proj>` - Custom command given for target application. Some examples:
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
 
@@ -87,7 +80,6 @@ open-project=open my-project.tmproj
 
 - `git+npm`
 - `git`
-- `npm`
 
 
 ## Useful Commands
