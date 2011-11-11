@@ -9,7 +9,6 @@
   },                 
   "dependencies": {
     "gumbo":"0.1.2",
-    "mkdir":"0.0.1",
     "colors":"0.5.1",
 	"celeri":"0.1.0",
 	"ini":"1.0.1",
