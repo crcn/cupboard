@@ -26,9 +26,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>97</integer>
 				<key>line</key>
-				<integer>14</integer>
+				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -54,7 +54,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>9</integer>
 				<key>line</key>
 				<integer>0</integer>
 			</dict>
@@ -68,289 +68,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
-				<key>line</key>
-				<integer>2</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/bump.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib.old/commands/count.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib.old/commands/help.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>97</integer>
-				<key>line</key>
-				<integer>65</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>41</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>118</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/help.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib.old/commands/init.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>32</integer>
-				<key>line</key>
-				<integer>83</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>28</integer>
-				<key>line</key>
-				<integer>83</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>38</integer>
-				<key>line</key>
-				<integer>83</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/list.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>31</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>40</integer>
-				<key>line</key>
-				<integer>2</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>31</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/publish.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>23</integer>
-				<key>line</key>
-				<integer>14</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>19</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/remove.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>82</integer>
-				<key>line</key>
 				<integer>9</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib.old/commands/templates.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>36</integer>
-				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
 				<key>line</key>
 				<integer>0</integer>
 			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>17</integer>
-			</dict>
-		</dict>
-		<key>lib.old/commands/untouch.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>lib.old/cupboard.js</key>
+		<key>conf/main.conf</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
 				<integer>1</integer>
-				<key>line</key>
-				<integer>30</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>28</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>40</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>30</integer>
-			</dict>
-		</dict>
-		<key>lib.old/queue.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>19</integer>
-				<key>line</key>
-				<integer>23</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -443,6 +177,20 @@
 				<integer>79</integer>
 			</dict>
 		</dict>
+		<key>lib/beans/cbd.command.publish/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>10</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>lib/beans/cbd.command.untouch/index.js</key>
 		<dict>
 			<key>caret</key>
@@ -476,23 +224,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>49</integer>
 				<key>line</key>
-				<integer>47</integer>
+				<integer>39</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>24</integer>
+			<integer>27</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/exec.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>17</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>35</integer>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -504,9 +252,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -518,43 +266,43 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>24</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>121</integer>
+				<integer>31</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>102</integer>
+			<integer>2</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/model.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>17</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>149</integer>
+				<integer>59</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>81</integer>
+			<integer>36</integer>
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>149</integer>
+				<integer>59</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>20</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>149</integer>
+				<integer>59</integer>
 			</dict>
 		</dict>
 		<key>lib/bootstrap.js</key>
@@ -562,9 +310,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>16</integer>
 				<key>line</key>
-				<integer>14</integer>
+				<integer>13</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -590,9 +338,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>42</integer>
+				<integer>38</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -857,6 +605,106 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>node_modules/chowder/lib/evaluator.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/chowder/lib/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>5</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/chowder/lib/loaders/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>23</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>6</integer>
+		</dict>
+		<key>node_modules/chowder/node_modules/fglob/package.json</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/chowder/node_modules/fglob/src/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>3</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>93</integer>
+			</dict>
+		</dict>
+		<key>node_modules/chowder/node_modules/fglob/tests/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>node_modules/colors/colors.js</key>
 		<dict>
 			<key>caret</key>
@@ -1101,22 +949,23 @@
 		<string>package.json</string>
 		<string>lib/beans/cbd.command.list/index.js</string>
 		<string>lib/beans/cbd.command.details/index.js</string>
-		<string>lib.old/commands/init.js</string>
 		<string>lib/beans/cbd.projects/index.js</string>
-		<string>lib.old/commands/untouch.js</string>
-		<string>lib.old/commands/templates.js</string>
+		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
 		<string>node_modules/vine/package.json</string>
 		<string>lib/beans/cbd.command.dir/index.js</string>
-		<string>lib.old/commands/help.txt</string>
-		<string>lib.old/commands/help.js</string>
 		<string>bin/cupboard</string>
-		<string>lib.old/commands/remove.js</string>
-		<string>lib.old/commands/publish.js</string>
 		<string>lib/bootstrap.js</string>
 		<string>conf/git.tpl.conf</string>
+		<string>conf/main.conf</string>
 		<string>conf/git+npm.tpl.conf</string>
 		<string>lib/beans/cbd.core/index.js</string>
+		<string>node_modules/chowder/node_modules/fglob/package.json</string>
+		<string>node_modules/chowder/node_modules/fglob/src/index.js</string>
+		<string>node_modules/chowder/node_modules/fglob/tests/index.js</string>
+		<string>node_modules/chowder/lib/index.js</string>
+		<string>node_modules/chowder/lib/evaluator.js</string>
+		<string>node_modules/chowder/lib/loaders/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
 		<string>lib/index.js</string>
@@ -1124,22 +973,17 @@
 		<string>lib/beans/cbd.projects/model.js</string>
 		<string>node_modules/vine/index.js</string>
 		<string>lib/beans/cbd.projects/getUpdatesFiles.js</string>
-		<string>lib.old/commands/count.js</string>
-		<string>lib.old/commands/list.js</string>
 		<string>node_modules/gumbo/lib/core/persist/ini/index.js</string>
 		<string>node_modules/gumbo/lib/core/model/index.js</string>
 		<string>node_modules/gumbo/lib/collection.js</string>
 		<string>lib/beans/cbd.projects/config.js</string>
 		<string>node_modules/vine/README.md</string>
 		<string>lib/beans/cbd.projects/exec.js</string>
-		<string>lib.old/queue.js</string>
-		<string>lib.old/commands/bump.js</string>
-		<string>lib.old/cupboard.js</string>
 		<string>README.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1230, 874}}</string>
+	<string>{{0, 4}, {1224, 874}}</string>
 </dict>
 </plist>

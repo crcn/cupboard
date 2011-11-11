@@ -1,0 +1,687 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish', '--force' ]
+info using npm@1.0.105
+info using node@v0.6.0
+verbose config file /Users/craig/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Reverse Repo System',
+silly testEngine   version: '0.1.0',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.2',
+silly testEngine      mkdir: '0.0.1',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.1.0',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1',
+silly testEngine      underscore: '*',
+silly testEngine      structr: '*',
+silly testEngine      beanpole: '0.1.16',
+silly testEngine      vine: '0.0.10',
+silly testEngine      chowder: '*' },
+silly testEngine   bin: { cbd: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly testEngine   _id: 'cupboard@0.1.0',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.0',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/craig/Dropbox/Developer/Public/cupboard/package.json
+verbose loadDefaults cupboard@0.1.0
+info prepublish cupboard@0.1.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Reverse Repo System',
+silly testEngine   version: '0.1.0',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.2',
+silly testEngine      mkdir: '0.0.1',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.1.0',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1',
+silly testEngine      underscore: '*',
+silly testEngine      structr: '*',
+silly testEngine      beanpole: '0.1.16',
+silly testEngine      vine: '0.0.10',
+silly testEngine      chowder: '*' },
+silly testEngine   bin: { cbd: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly testEngine   _id: 'cupboard@0.1.0',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.0',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/craig/Dropbox/Developer/Public/cupboard',
+silly testEngine   bundleDependencies: [] }
+verbose caching package.json
+verbose loadDefaults cupboard@0.1.0
+verbose pack /Users/craig/Dropbox/Developer/Public/cupboard /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/tmp.tgz
+silly makeList /Users/craig/Dropbox/Developer/Public/cupboard
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801 755
+verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/tmp.tgz' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm' ]
+silly tar err x cupboard/.cupboard
+silly tar err x cupboard/.gitignore
+silly tar err x cupboard/cupboard.tmproj
+silly tar err x cupboard/package.json
+silly tar err x cupboard/README.md
+silly tar err x cupboard/bin/cupboard
+silly tar err x cupboard/conf/git+npm.tpl.conf
+silly tar err x cupboard/conf/git.tpl.conf
+silly tar err x cupboard/conf/main.conf
+silly tar err x cupboard/lib/bootstrap.js
+silly tar err x cupboard/lib/index.js
+silly tar err x cupboard/lib/utils/printMessages.js
+silly tar err x cupboard/lib/beans/cbd.command.details/index.js
+silly tar err x cupboard/lib/beans/cbd.command.helpmenu/index.js
+silly tar err x cupboard/lib/beans/cbd.command.dir/index.js
+silly tar err x cupboard/lib/beans/cbd.command.publish/index.js
+silly tar err x cupboard/lib/beans/cbd.command.install/index.js
+silly tar err x cupboard/lib/beans/cbd.command.list/index.js
+silly tar err x cupboard/lib/beans/cbd.command.untouch/index.js
+silly tar err x cupboard/lib/beans/cbd.core/index.js
+silly tar err x cupboard/lib/beans/cbd.projects/config.js
+silly tar err x cupboard/lib/beans/cbd.projects/exec.js
+silly tar err x cupboard/lib/beans/cbd.projects/getUpdatesFiles.js
+silly tar err x cupboard/lib/beans/cbd.projects/index.js
+silly tar err x cupboard/lib/beans/cbd.projects/model.js
+silly tar exit 0
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/.cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/.gitignore
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/cupboard.tmproj
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/package.json
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/README.md
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/bin
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/bin/cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/conf/git+npm.tpl.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/conf/git.tpl.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/conf/main.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/bootstrap.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/utils
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/utils/printMessages.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.details
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.details/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.dir
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.dir/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.helpmenu
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.helpmenu/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.install
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.install/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.list
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.list/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.publish
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.publish/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.untouch
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.command.untouch/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.core
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.core/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects/config.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects/exec.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects/getUpdatesFiles.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard/lib/beans/cbd.projects/model.js
+verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard
+verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package
+verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/___package.npm/cupboard',
+verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Reverse Repo System',
+silly testEngine   version: '0.1.0',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.2',
+silly testEngine      mkdir: '0.0.1',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.1.0',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1',
+silly testEngine      underscore: '*',
+silly testEngine      structr: '*',
+silly testEngine      beanpole: '0.1.16',
+silly testEngine      vine: '0.0.10',
+silly testEngine      chowder: '*' },
+silly testEngine   bin: { cbd: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly testEngine   _id: 'cupboard@0.1.0',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.0',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package' }
+verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package/package.json
+verbose loadDefaults cupboard@0.1.0
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package/package.json
+verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package /Users/craig/.npm/cupboard/0.1.0/package.tgz
+silly makeList /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents/package
+verbose mkdir'ed /Users/craig/.npm/cupboard/0.1.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992623251-0.9921858396846801/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/cupboard/0.1.0/___package.npm'
+verbose mkdir done: /Users/craig/.npm/cupboard/0.1.0/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/craig/.npm/cupboard/0.1.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf', '/Users/craig/.npm/cupboard/0.1.0/package.tgz' ],
+silly spawning   '/Users/craig/.npm/cupboard/0.1.0/___package.npm' ]
+silly tar err x package/.cupboard
+silly tar err x package/.gitignore
+silly tar err x package/cupboard.tmproj
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/bin/cupboard
+silly tar err x package/conf/git+npm.tpl.conf
+silly tar err x package/conf/git.tpl.conf
+silly tar err x package/conf/main.conf
+silly tar err x package/lib/bootstrap.js
+silly tar err x package/lib/index.js
+silly tar err x package/lib/utils/printMessages.js
+silly tar err x package/lib/beans/cbd.command.details/index.js
+silly tar err x package/lib/beans/cbd.command.dir/index.js
+silly tar err x package/lib/beans/cbd.command.helpmenu/index.js
+silly tar err x package/lib/beans/cbd.command.install/index.js
+silly tar err x package/lib/beans/cbd.command.list/index.js
+silly tar err x package/lib/beans/cbd.command.publish/index.js
+silly tar err x package/lib/beans/cbd.command.untouch/index.js
+silly tar err x package/lib/beans/cbd.core/index.js
+silly tar err x package/lib/beans/cbd.projects/config.js
+silly tar err x package/lib/beans/cbd.projects/exec.js
+silly tar err x package/lib/beans/cbd.projects/getUpdatesFiles.js
+silly tar err x package/lib/beans/cbd.projects/index.js
+silly tar err x package/lib/beans/cbd.projects/model.js
+silly tar exit 0
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/.cupboard
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/cupboard.tmproj
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/bin
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/bin/cupboard
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/git+npm.tpl.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/git.tpl.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/main.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/bootstrap.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/utils
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/utils/printMessages.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.details
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.details/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.dir
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.dir/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.helpmenu
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.helpmenu/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.install
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.install/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.list
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.list/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.publish
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.publish/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.untouch
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.untouch/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.core
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.core/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/config.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/exec.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/getUpdatesFiles.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/model.js
+verbose gunzed /Users/craig/.npm/cupboard/0.1.0/___package.npm/package
+verbose rm'ed /Users/craig/.npm/cupboard/0.1.0/package
+verbose renamed [ '/Users/craig/.npm/cupboard/0.1.0/___package.npm/package',
+verbose renamed   '/Users/craig/.npm/cupboard/0.1.0/package' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Reverse Repo System',
+silly testEngine   version: '0.1.0',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.2',
+silly testEngine      mkdir: '0.0.1',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.1.0',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1',
+silly testEngine      underscore: '*',
+silly testEngine      structr: '*',
+silly testEngine      beanpole: '0.1.16',
+silly testEngine      vine: '0.0.10',
+silly testEngine      chowder: '*' },
+silly testEngine   bin: { cbd: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly testEngine   _id: 'cupboard@0.1.0',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.0',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '24c7a2e4273a3f9051be60f1683c45fc9bc34875',
+silly testEngine      tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.1.0.tgz' } }
+verbose caching /Users/craig/.npm/cupboard/0.1.0/package/package.json
+verbose loadDefaults cupboard@0.1.0
+silly updated sha bytes 20480
+info shasum c2f32caf5c89e611bfd6cba62df8b315047dfa89
+info shasum /Users/craig/.npm/cupboard/0.1.0/package.tgz
+verbose from cache /Users/craig/.npm/cupboard/0.1.0/package/package.json
+verbose chmod /Users/craig/.npm/cupboard/0.1.0/package.tgz 644
+verbose chown [ '/Users/craig/.npm/cupboard/0.1.0/package.tgz', 501, 20 ]
+silly publish { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly publish   name: 'cupboard',
+silly publish   description: 'Reverse Repo System',
+silly publish   version: '0.1.0',
+silly publish   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly publish   dependencies: 
+silly publish    { gumbo: '0.1.2',
+silly publish      mkdir: '0.0.1',
+silly publish      colors: '0.5.1',
+silly publish      celeri: '0.1.0',
+silly publish      ini: '1.0.1',
+silly publish      findit: '0.1.1',
+silly publish      'relative-date': '1.1.1',
+silly publish      underscore: '*',
+silly publish      structr: '*',
+silly publish      beanpole: '0.1.16',
+silly publish      vine: '0.0.10',
+silly publish      chowder: '*' },
+silly publish   bin: { cbd: './bin/cupboard' },
+silly publish   devDependencies: {},
+silly publish   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly publish   _id: 'cupboard@0.1.0',
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.105',
+silly publish   _nodeVersion: 'v0.6.0',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '24c7a2e4273a3f9051be60f1683c45fc9bc34875',
+silly publish      tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.1.0.tgz' } }
+verbose PUT cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+verbose GET cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+info Already published cupboard@0.1.0
+verbose uploading bin dists []
+WARN publish Forced publish over cupboard@0.1.0
+verbose GET cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"3I58R76UCMCEU5RXRI3IBC55C"',
+silly get cb     date: 'Fri, 11 Nov 2011 06:23:45 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '6686' } ]
+verbose removing attachments { shasum: '8451d59d4a8dc58f1c4c6a64d94ba9df2464916c',
+verbose removing attachments   tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.1.0.tgz' }
+verbose PUT cupboard/-rev/342-ac8373c4dabc0f686974015947144c31
+verbose raw, before any munging cupboard/-rev/342-ac8373c4dabc0f686974015947144c31
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './cupboard/-rev/342-ac8373c4dabc0f686974015947144c31' ]
+verbose url resolved https://registry.npmjs.org/cupboard/-rev/342-ac8373c4dabc0f686974015947144c31
+verbose GET cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+verbose etag "3I58R76UCMCEU5RXRI3IBC55C"
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"BI5NE9MLA1EFPAWIOR2FJVSRS"',
+silly get cb     date: 'Fri, 11 Nov 2011 06:23:47 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '5731' } ]
+info detach /cupboard/-/cupboard-0.1.0.tgz/-rev/343-a3c676d2ba9cc30973060cd679b3c3dc
+verbose DELETE /cupboard/-/cupboard-0.1.0.tgz/-rev/343-a3c676d2ba9cc30973060cd679b3c3dc
+verbose raw, before any munging /cupboard/-/cupboard-0.1.0.tgz/-rev/343-a3c676d2ba9cc30973060cd679b3c3dc
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './cupboard/-/cupboard-0.1.0.tgz/-rev/343-a3c676d2ba9cc30973060cd679b3c3dc' ]
+verbose url resolved https://registry.npmjs.org/cupboard/-/cupboard-0.1.0.tgz/-rev/343-a3c676d2ba9cc30973060cd679b3c3dc
+verbose publish [ '.' ]
+verbose from cache /Users/craig/Dropbox/Developer/Public/cupboard/package.json
+info prepublish cupboard@0.1.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+verbose from cache package.json
+verbose pack /Users/craig/Dropbox/Developer/Public/cupboard /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/tmp.tgz
+silly makeList /Users/craig/Dropbox/Developer/Public/cupboard
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346 755
+verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/tmp.tgz' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm' ]
+silly tar err x cupboard/.cupboard
+silly tar err x cupboard/.gitignore
+silly tar err x cupboard/cupboard.tmproj
+silly tar err x cupboard/package.json
+silly tar err x cupboard/README.md
+silly tar err x cupboard/bin/cupboard
+silly tar err x cupboard/conf/git+npm.tpl.conf
+silly tar err x cupboard/conf/git.tpl.conf
+silly tar err x cupboard/conf/main.conf
+silly tar err x cupboard/lib/bootstrap.js
+silly tar err x cupboard/lib/index.js
+silly tar err x cupboard/lib/utils/printMessages.js
+silly tar err x cupboard/lib/beans/cbd.command.details/index.js
+silly tar err x cupboard/lib/beans/cbd.command.dir/index.js
+silly tar err x cupboard/lib/beans/cbd.command.helpmenu/index.js
+silly tar err x cupboard/lib/beans/cbd.command.install/index.js
+silly tar err x cupboard/lib/beans/cbd.command.list/index.js
+silly tar err x cupboard/lib/beans/cbd.command.publish/index.js
+silly tar err x cupboard/lib/beans/cbd.command.untouch/index.js
+silly tar err x cupboard/lib/beans/cbd.core/index.js
+silly tar err x cupboard/lib/beans/cbd.projects/config.js
+silly tar err x cupboard/lib/beans/cbd.projects/exec.js
+silly tar err x cupboard/lib/beans/cbd.projects/getUpdatesFiles.js
+silly tar err x cupboard/lib/beans/cbd.projects/index.js
+silly tar err x cupboard/lib/beans/cbd.projects/model.js
+silly tar exit 0
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/.cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/.gitignore
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/cupboard.tmproj
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/package.json
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/README.md
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/bin
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/bin/cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/conf/git+npm.tpl.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/conf/git.tpl.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/conf/main.conf
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/bootstrap.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/utils
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/utils/printMessages.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.details
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.details/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.dir
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.dir/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.helpmenu
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.helpmenu/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.install
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.install/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.list
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.list/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.publish
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.publish/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.untouch
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.command.untouch/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.core
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.core/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects/config.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects/exec.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects/getUpdatesFiles.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard/lib/beans/cbd.projects/model.js
+verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard
+verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package
+verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/___package.npm/cupboard',
+verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package' ]
+silly testEngine { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   name: 'cupboard',
+silly testEngine   description: 'Reverse Repo System',
+silly testEngine   version: '0.1.0',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly testEngine   dependencies: 
+silly testEngine    { gumbo: '0.1.2',
+silly testEngine      mkdir: '0.0.1',
+silly testEngine      colors: '0.5.1',
+silly testEngine      celeri: '0.1.0',
+silly testEngine      ini: '1.0.1',
+silly testEngine      findit: '0.1.1',
+silly testEngine      'relative-date': '1.1.1',
+silly testEngine      underscore: '*',
+silly testEngine      structr: '*',
+silly testEngine      beanpole: '0.1.16',
+silly testEngine      vine: '0.0.10',
+silly testEngine      chowder: '*' },
+silly testEngine   bin: { cbd: './bin/cupboard' },
+silly testEngine   devDependencies: {},
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly testEngine   _id: 'cupboard@0.1.0',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.0',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package' }
+verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package/package.json
+verbose loadDefaults cupboard@0.1.0
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package/package.json
+verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package /Users/craig/.npm/cupboard/0.1.0/package.tgz
+silly makeList /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents/package
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/cupboard/0.1.0'
+verbose mkdir done: /Users/craig/.npm/cupboard/0.1.0 755
+verbose mkdir'ed /Users/craig/.npm/cupboard/0.1.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320992623252/1320992628275-0.302766878856346/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/cupboard/0.1.0/___package.npm'
+verbose mkdir done: /Users/craig/.npm/cupboard/0.1.0/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/craig/.npm/cupboard/0.1.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf', '/Users/craig/.npm/cupboard/0.1.0/package.tgz' ],
+silly spawning   '/Users/craig/.npm/cupboard/0.1.0/___package.npm' ]
+silly tar err x package/.cupboard
+silly tar err x package/.gitignore
+silly tar err x package/cupboard.tmproj
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/bin/cupboard
+silly tar err x package/conf/git+npm.tpl.conf
+silly tar err x package/conf/git.tpl.conf
+silly tar err x package/conf/main.conf
+silly tar err x package/lib/bootstrap.js
+silly tar err x package/lib/index.js
+silly tar err x package/lib/utils/printMessages.js
+silly tar err x package/lib/beans/cbd.command.details/index.js
+silly tar err x package/lib/beans/cbd.command.dir/index.js
+silly tar err x package/lib/beans/cbd.command.install/index.js
+silly tar err x package/lib/beans/cbd.command.list/index.js
+silly tar err x package/lib/beans/cbd.command.publish/index.js
+silly tar err x package/lib/beans/cbd.command.untouch/index.js
+silly tar err x package/lib/beans/cbd.core/index.js
+silly tar err x package/lib/beans/cbd.projects/config.js
+silly tar err x package/lib/beans/cbd.projects/exec.js
+silly tar err x package/lib/beans/cbd.projects/getUpdatesFiles.js
+silly tar err x package/lib/beans/cbd.projects/index.js
+silly tar err x package/lib/beans/cbd.projects/model.js
+silly tar err x package/lib/beans/cbd.command.helpmenu/index.js
+silly tar exit 0
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/.cupboard
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/cupboard.tmproj
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/git+npm.tpl.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/git.tpl.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/conf/main.conf
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/bin
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/bin/cupboard
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/bootstrap.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/utils
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/utils/printMessages.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.details
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.details/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.dir
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.dir/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.helpmenu
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.helpmenu/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.install
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.install/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.list
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.list/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.publish
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.publish/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.untouch
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.command.untouch/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.core
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.core/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/config.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/exec.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/getUpdatesFiles.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/index.js
+silly asyncMap in gTP /Users/craig/.npm/cupboard/0.1.0/___package.npm/package/lib/beans/cbd.projects/model.js
+verbose gunzed /Users/craig/.npm/cupboard/0.1.0/___package.npm/package
+verbose rm'ed /Users/craig/.npm/cupboard/0.1.0/package
+verbose renamed [ '/Users/craig/.npm/cupboard/0.1.0/___package.npm/package',
+verbose renamed   '/Users/craig/.npm/cupboard/0.1.0/package' ]
+verbose from cache /Users/craig/.npm/cupboard/0.1.0/package/package.json
+silly updated sha bytes 10240
+info shasum 24c7a2e4273a3f9051be60f1683c45fc9bc34875
+info shasum /Users/craig/.npm/cupboard/0.1.0/package.tgz
+verbose from cache /Users/craig/.npm/cupboard/0.1.0/package/package.json
+verbose chmod /Users/craig/.npm/cupboard/0.1.0/package.tgz 644
+verbose chown [ '/Users/craig/.npm/cupboard/0.1.0/package.tgz', 501, 20 ]
+silly publish { author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly publish   name: 'cupboard',
+silly publish   description: 'Reverse Repo System',
+silly publish   version: '0.1.0',
+silly publish   repository: { type: 'git', url: 'git://github.com/spiceapps/cupboard.git' },
+silly publish   dependencies: 
+silly publish    { gumbo: '0.1.2',
+silly publish      mkdir: '0.0.1',
+silly publish      colors: '0.5.1',
+silly publish      celeri: '0.1.0',
+silly publish      ini: '1.0.1',
+silly publish      findit: '0.1.1',
+silly publish      'relative-date': '1.1.1',
+silly publish      underscore: '*',
+silly publish      structr: '*',
+silly publish      beanpole: '0.1.16',
+silly publish      vine: '0.0.10',
+silly publish      chowder: '*' },
+silly publish   bin: { cbd: './bin/cupboard' },
+silly publish   devDependencies: {},
+silly publish   _npmUser: { name: 'architectd', email: 'craig.j.condon@gmail.com' },
+silly publish   _id: 'cupboard@0.1.0',
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.105',
+silly publish   _nodeVersion: 'v0.6.0',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '24c7a2e4273a3f9051be60f1683c45fc9bc34875',
+silly publish      tarball: 'http://registry.npmjs.org/cupboard/-/cupboard-0.1.0.tgz' } }
+verbose PUT cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+verbose GET cupboard
+verbose raw, before any munging cupboard
+verbose url resolving [ 'https://registry.npmjs.org/', './cupboard' ]
+verbose url resolved https://registry.npmjs.org/cupboard
+verbose PUT cupboard/0.1.0/-tag/latest
+verbose raw, before any munging cupboard/0.1.0/-tag/latest
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './cupboard/0.1.0/-tag/latest' ]
+verbose url resolved https://registry.npmjs.org/cupboard/0.1.0/-tag/latest
+ERR! Error sending version data
+ERR! Error: forbidden 0.1.0 is modified, should match modified time: cupboard/0.1.0/-tag/latest
+ERR!     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:180:12)
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:99:22)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:361:18)
+ERR!     at Request.emit (events.js:67:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:327:16)
+ERR!     at IncomingMessage.emit (events.js:88:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR!     at CleartextStream.ondata (http.js:1125:24)
+ERR!     at CleartextStream._push (tls.js:363:27)
+ERR!     at SecurePair.cycle (tls.js:679:20)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "publish" "--force"
+ERR! cwd /Users/craig/Dropbox/Developer/Public/cupboard
+ERR! node -v v0.6.0
+ERR! npm -v 1.0.105
+verbose exit [ 1, true ]
