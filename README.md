@@ -5,9 +5,9 @@ Repository management (GIT/NPM) for your projects
 
 
 
-## Why?                                                     
-       
-Managing a kajillion repositories is a pain in the ass. 
+## Use cupboard if...                                                     
+      
+- You have many projects and it's becom
 
 ## Features                                
            
@@ -15,6 +15,7 @@ Managing a kajillion repositories is a pain in the ass.
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
 - Push to both NPM, and GIT with one command. 
+- **Install third-party plugins**
 - Ability to call a command against multiple projects. e.g:
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
 	- `cbd open my-app+another-app` opens the given applications in finder.
@@ -28,47 +29,70 @@ Managing a kajillion repositories is a pain in the ass.
 
 	npm install cupboard
 	
+	
 ## Basic Usage                                   
                           
 For each project you want to use in cupboard, simply call this command in your project directory:
                                             
 	cbd init               
 
-	                         
-will add basic GIT, and NPM functions to your target project such as `publish`, and `ignore`. For example:
+That'll setup a basic GIT configuration. There are however a few additional options. If you want to add NPM and GIT, just swap in the template like so:
 
-	cbd ignore my-app my/file/to/ignore
+	cbd init --tpl=git+npm
 	
-will append my/file/to/ignore to .gitignore. Here's another example:
 
- 	cbd publish my-app "my commit message"
-                   
-will call the publish command specified in the template git+npm, which happens to commit, and push my-app to both GIT, and NPM.       
+## Custom Templates 
 
+Custom templates allow to easily specify a set of custom commands for any given project. Here's an example:
 
 
-If you want more granular control over your cupboard configurations, just edit the `.cupboard` in your root project directory. A config file looks like this:
+```ini
 
-````ini
-    
-[project]
-name=project-name
+[template:svn:commands]
+publish=svn commit ...
+my-custom-command
 
+```
+
+
+When writing custom templates, or any custom configuration, they should be placed in `~/.cupboard/my_conf/`. The example above might be written to `~/.cupboard/my_conf/svn.conf`. After that, you can start using it:
+
+	cbd init --tpl=svn
+
+
+## Custom Commands
+
+You can easily specify custom commands for each project. There are few ways to do so:
+
+1. create a `/path/to/project/.cupboard` file. An example might be:
+
+```ini
 
 [commands]
-publish=my publish commands separated by commas
-XXXX=whatever command I want...
-open-project=open my-project.tmproj
+my_custom_command=args
 
-````                                                                                                        
+```
+
+2. Modify the project setting under `~/.cupboard/projects.conf`. Like so:
+
+````ini
+
+[project:my-project:commands]
+my_custom_commands=args
+
+````
+
+I prefer method one since it's a bit more portable.
+                                                                      
                              
 ## Default Commands           
                   
 - `cbd init` - Adds an project to cupboard.
 - `cbd list` - Lit all the projects. Also contains details of what projects have been updated.         
 - `cbd updates` - List projects with updates.                                                                          
-- `cbd publish <proj>` - Publishes given application.                        
-- `cbd open <proj>` - Open a project in finder.    
+- `cbd publish <proj>` - Publishes given application.          
+- `cbd install <plugin>` - Installs a cupboard plugin.
+- `cbd uninstall <plugin>` - Uninstalls a cupboard plugin.
 - `cbd dir <proj>` - Returns the directory of the target app.     
 - `cbd details <proj>` - show details of given project.
 ' `cbd untouch <proj>` - sets the given project to "updated"
@@ -76,19 +100,13 @@ open-project=open my-project.tmproj
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
 
-## Default Template
+## Default Templates
 
 - `git+npm`
 - `git`
 
 
-## Useful Commands
-
-the following chunk will change the current working directory to the application specified:   
-
-````bash       
-cd `cbd dir my-project-name`
-````      
+## Writing Plugins
             
 
 
