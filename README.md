@@ -158,7 +158,7 @@ Executes a command against the given project.
 	- `command` - Command to execute against the project.
 	- `args` - Arguments to pass onto given command.
 
-A few examples:
+#### An example:
 
 In the `.cupboard` file located in `path/to/my-project`:
 
