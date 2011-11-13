@@ -127,9 +127,9 @@ cd `cbd dir my-project`
 Invoke a command against all project directories:
 
 ````bash
-	for DIR in `cbd dir --all`; 
-		echo $DIR; # do stuff here
-	done;
+for DIR in `cbd dir --all`; 
+	echo $DIR; # do stuff here
+done;
 ````
 	
 
