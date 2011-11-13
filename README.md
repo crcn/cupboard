@@ -73,28 +73,19 @@ The following templates come with cupboard:
 
 ## Commands
 
-You can easily specify custom commands for each project. There are few ways to do so:
-
-- Create a `/path/to/project/.cupboard` file. An example might be:
+You can specify custom commands for each project. There are few ways to do so. The first option would be to create a `/path/to/project/.cupboard` file. An example might be:
 
 ```ini
-
 [commands]
 my_custom_command=args
-
 ```
 
--  Modify the project setting under `~/.cupboard/projects.conf`. Like so:
+The other option is to modify the project setting under `~/.cupboard/projects.conf`. Like so:
 
 ````ini
-
 [project:my-project:commands]
 my_custom_commands=args
-
-````
-
-I prefer method one since it's a bit more portable.
-                                                                      
+````                                                                  
                              
 ### Default           
                   
