@@ -146,7 +146,7 @@ Returns a property specified in the `projects.conf` file under the given project
 
 "Untouches" project so no changes will be listed.
 
-### FileWatcher Project.watch()
+### Project.watch():FileWatcher
 
 Watches file for any file changes.
 
