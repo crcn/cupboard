@@ -109,6 +109,81 @@ I prefer method one since it's a bit more portable.
 - `git+npm`
 - `git`
 
+## API
+
+### cupboard.getProjects(projects, callback)
+
+Returns all the projects registered in cupboard.
+
+- `projects` - can be a string, or an array of projects. String can also be `--all`, or `project+another-project`.
+
+````javascript
+
+var cupboard = require('cupboard');
+
+cupboard.getProjects('bonsai', function(err, projects) {
+	
+	projects.forEach(function(project) {
+		
+		console.log('Listing %s changes:', project.name());
+		
+		//return list of changed files for given project
+		project.getUpdatedFiles(function(err, files) {
+			
+			
+		});
+	});
+});
+
+### Project.name()
+
+Returns the name of the given project.
+
+### Project.path()
+
+Returns the symlink path of the given project.
+
+### Project.get(property)
+
+Returns a property specified in the `projects.conf` file under the given project.
+
+### Project.loadConfig(callback)
+
+Loads all configuration settings for given project, including all target specific commands. 
+
+### Project.execute(ops)
+
+Executes a command against the given project. 
+
+- `ops`
+	- `command` - Command to execute against the project.
+	- `args` - Arguments to pass onto given command.
+
+A few examples:
+
+In the `.cupboard` file located in `path/to/my-project`:
+
+````ini
+
+[commands]
+say-hello=echo Hello $@
+
+````
+
+In your node.js script:
+
+````javascript
+
+cupboard.getProjects('my-project', function(err, projects) {
+	
+	var myProject = projects[0];
+	
+	
+	myProject.execute({ command: 'say-hello' args: ['Craig'] }); //terminal print "Hello Craig!"
+	myProject.execute({ command: 'publish', args: ['Some commit message']})
+});
+
+````
 
 ## Writing Plugins
 
