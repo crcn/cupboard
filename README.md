@@ -116,6 +116,23 @@ I prefer method one since it's a bit more portable.
 
 
 
+## Useful tricks
+
+Easily change to the directory of any project:
+
+````bash
+cd `cbd dir my-project`
+````
+
+Invoke a command against all project directories:
+
+````bash
+	for DIR in `cbd dir --all`; 
+		echo $DIR; # do stuff here
+	done;
+````
+	
+
 
               
 
