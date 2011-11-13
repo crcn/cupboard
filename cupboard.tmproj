@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.command.helpmenu/index.js</string>
+	<string>README.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,14 +26,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>86</integer>
+				<integer>10</integer>
 				<key>line</key>
-				<integer>108</integer>
+				<integer>26</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>72</integer>
+			<integer>0</integer>
 		</dict>
 		<key>bin/cupboard</key>
 		<dict>
@@ -955,6 +955,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{-11, -88}, {1224, 874}}</string>
+	<string>{{10, 4}, {1224, 874}}</string>
 </dict>
 </plist>

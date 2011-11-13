@@ -27,6 +27,7 @@ Repository management (GIT/NPM) for your projects
 ## Plugins
 
 - [cupboard.github](http://github.com/spiceapps/cupboard.github)
+- [cupboard.scaffold](http://github.com/spiceapps/cupboard.scaffold) 
 	
 ## Basic Usage                                   
                           
