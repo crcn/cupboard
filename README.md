@@ -66,8 +66,8 @@ When writing custom templates, or any custom configuration, they should be place
 
 The following templates come with cupboard:
 
-	- `git+npm`
-	- `git`
+- `git+npm`
+- `git`
 
 
 
