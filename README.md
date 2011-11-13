@@ -71,7 +71,7 @@ The following templates come with cupboard:
 
 
 
-## Custom Commands
+## Commands
 
 You can easily specify custom commands for each project. There are few ways to do so:
 
@@ -96,7 +96,7 @@ my_custom_commands=args
 I prefer method one since it's a bit more portable.
                                                                       
                              
-## Default Commands           
+### Default           
                   
 - `cbd init` - Adds an project to cupboard.
 - `cbd list` - Lit all the projects. Also contains details of what projects have been updated.         
