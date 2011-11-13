@@ -128,6 +128,7 @@ cupboard.getProjects('bonsai', function(err, projects) {
 		});
 	});
 });
+````
 
 ### Project.name()
 
