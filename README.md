@@ -147,6 +147,10 @@ Returns the symlink path of the given project.
 
 Returns a property specified in the `projects.conf` file under the given project.
 
+## Project.untouch()
+
+"Untouches" project so no changes will be listed.
+
 ### Project.loadConfig(callback)
 
 Loads all configuration settings for given project, including all target specific commands. 
