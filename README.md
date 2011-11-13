@@ -146,6 +146,10 @@ Returns a property specified in the `projects.conf` file under the given project
 
 "Untouches" project so no changes will be listed.
 
+### FileWatcher Project.watch()
+
+Watches file for any file changes.
+
 ### Project.loadConfig(callback)
 
 Loads all configuration settings for given project, including all target specific commands. 
@@ -158,6 +162,14 @@ Executes a command against the given project.
 	- `command` - Command to execute against the project.
 	- `args` - Arguments to pass onto given command.
 
+
+### FileWatcher.on(event, callback)
+
+- `event`
+    - `change` - file changed
+	- `add` - file added
+	- `remove` - file removed
+	
 #### An example:
 
 In the `.cupboard` file located in `path/to/my-project`:
