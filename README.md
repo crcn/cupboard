@@ -44,9 +44,9 @@ That'll setup a basic GIT configuration. There are however a few additional opti
 	cbd init --tpl=git+npm
 	
 
-## Custom Templates 
+## Templates 
 
-Custom templates allow to easily specify a set of custom commands for any given project. Here's an example:
+templates allow to easily specify a set of custom commands for any given project. Here's an example:
 
 
 ```ini
@@ -61,6 +61,14 @@ my-custom-command
 When writing custom templates, or any custom configuration, they should be placed in `~/.cupboard/my_conf/`. The example above might be written to `~/.cupboard/my_conf/svn.conf`. After that, you can start using it:
 
 	cbd init --tpl=svn
+	
+### Default
+
+The following templates come with cupboard:
+
+	- `git+npm`
+	- `git`
+
 
 
 ## Custom Commands
@@ -103,11 +111,6 @@ I prefer method one since it's a bit more portable.
 - `cbd <cmd> <proj>` - Custom command given for target application. Some examples:
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
-
-## Default Templates
-
-- `git+npm`
-- `git`
 
 ## API
 
