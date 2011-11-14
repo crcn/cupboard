@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>node_modules/watch_r/lib/index.js</string>
+	<string>package.json</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,14 +26,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>7</integer>
 				<key>line</key>
 				<integer>239</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>210</integer>
+			<integer>209</integer>
 		</dict>
 		<key>lib/beans/cbd.command.details/index.js</key>
 		<dict>
@@ -135,20 +135,6 @@
 				<integer>21</integer>
 			</dict>
 		</dict>
-		<key>lib/beans/cbd.command.start/index.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>35</integer>
-				<key>line</key>
-				<integer>29</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>9</integer>
-		</dict>
 		<key>lib/beans/cbd.command.untouch/index.js</key>
 		<dict>
 			<key>caret</key>
@@ -189,23 +175,9 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>23</integer>
+			<integer>17</integer>
 		</dict>
-		<key>lib/beans/cbd.projects/exec.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>75</integer>
-				<key>line</key>
-				<integer>24</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/beans/cbd.projects/exec2.js</key>
+		<key>lib/beans/cbd.projects/execute</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -252,14 +224,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>48</integer>
 				<key>line</key>
-				<integer>38</integer>
+				<integer>94</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>18</integer>
+			<integer>69</integer>
+		</dict>
+		<key>lib/beans/cbd.projects/processor.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>2</integer>
+				<key>line</key>
+				<integer>51</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>62</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/watcher.js</key>
 		<dict>
@@ -294,14 +280,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>47</integer>
+				<integer>30</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>40</integer>
+			<integer>10</integer>
 		</dict>
 		<key>node_modules/beanpole/examples/default/index.js</key>
 		<dict>
@@ -338,7 +324,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>line</key>
 				<integer>89</integer>
 			</dict>
@@ -352,9 +338,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>15</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>13</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -365,18 +351,17 @@
 	<key>openDocuments</key>
 	<array>
 		<string>README.md</string>
-		<string>lib/beans/cbd.projects/exec2.js</string>
+		<string>lib/beans/cbd.projects/processor.js</string>
 		<string>lib/beans/cbd.projects/config.js</string>
-		<string>lib/beans/cbd.projects/exec.js</string>
 		<string>package.json</string>
 		<string>lib/index.js</string>
+		<string>lib/beans/cbd.projects/execute</string>
 		<string>node_modules/watch_r/lib/index.js</string>
 		<string>node_modules/beanpole/examples/default/index.js</string>
 		<string>lib/beans/cbd.projects/model.js</string>
 		<string>lib/beans/cbd.core/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
 		<string>lib/beans/cbd.projects/index.js</string>
-		<string>lib/beans/cbd.command.start/index.js</string>
 		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>

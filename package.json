@@ -2,17 +2,17 @@
   "author": "Craig Condon <craig@spiceapps.com>",
   "name": "cupboard",
   "description": "Reverse Repo System",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/spiceapps/cupboard.git"
   },                 
   "dependencies": {
-    "gumbo":"0.1.2",
-    "colors":"0.5.1",
+    "gumbo":"0.1.2", 
+    "colors":"0.5.1", 
 	"celeri":"0.1.x", 
 	"ini":"1.0.1",
-	"findit":"0.1.1",
+	"findit":"0.1.1", 
 	"relative-date": "1.1.1",
 	"underscore":"*",
 	"structr": "*",
