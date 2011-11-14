@@ -95,7 +95,6 @@ my_custom_commands=args
 - `cbd publish <proj>` - Publishes given application.          
 - `cbd install <plugin>` - Installs a cupboard plugin.
 - `cbd uninstall <plugin>` - Uninstalls a cupboard plugin.
-- `cbd start <proj>` - Starts target project. `start` command must be specified in project commands.
 - `cbd plugins` - Lists third-party plugins.
 - `cbd dir <proj>` - Returns the directory of the target app.     
 - `cbd details <proj>` - show details of given project.
