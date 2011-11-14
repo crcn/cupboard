@@ -102,6 +102,20 @@ my_custom_commands=args
 - `cbd <cmd> <proj>` - Custom command given for target application. Some examples:
 	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
 
+### Watching Projects
+
+You can easily watch any project, and invoke commands on change by adding `--watch`. Here's an example:
+
+	cbd make --all --watch  
+	
+Another valid command is:
+
+	cbd some-command cupboard+celeri --watch
+	
+That command will watch projects cupboard, and celeri, and invoke `some-command` on any change. 
+
+In some cases, you may want to ignore certain directories from triggering `--watch`. You can easily to ignore folders by adding a `.ignorewatch` file. 
+
 
 ## API
 
@@ -147,7 +161,7 @@ Returns a property specified in the `projects.conf` file under the given project
 "Untouches" project so no changes will be listed.
 
 ### Project.watch():FileWatcher
-
+ 
 Watches file for any file changes.
 
 ### Project.loadConfig(callback)

@@ -18,7 +18,8 @@
 	"structr": "*",
 	"beanpole":"0.1.16",
 	"vine":"0.0.10",
-	"chowder":"*"
+	"chowder":"*",
+	"watch_r":"*"
   },    
   "bin": {
     "cbd": "./bin/cupboard"
