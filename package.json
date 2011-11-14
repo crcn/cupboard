@@ -2,7 +2,7 @@
   "author": "Craig Condon <craig@spiceapps.com>",
   "name": "cupboard",
   "description": "Reverse Repo System",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/spiceapps/cupboard.git"
