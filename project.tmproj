@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.projects/index.js</string>
+	<string>lib/beans/cbd.command.start/index.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,37 +26,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>84</integer>
+				<integer>34</integer>
 				<key>line</key>
-				<integer>102</integer>
+				<integer>180</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>89</integer>
+			<integer>152</integer>
 		</dict>
 		<key>lib/beans/cbd.command.details/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>50</integer>
+				<integer>23</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>15</integer>
+			<integer>10</integer>
 		</dict>
 		<key>lib/beans/cbd.command.dir/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>22</integer>
+				<integer>28</integer>
 				<key>line</key>
-				<integer>27</integer>
+				<integer>20</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -89,35 +89,49 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>40</integer>
+			<integer>18</integer>
 		</dict>
 		<key>lib/beans/cbd.command.list/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>34</integer>
 				<key>line</key>
-				<integer>67</integer>
+				<integer>13</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>27</integer>
+			<integer>37</integer>
 		</dict>
 		<key>lib/beans/cbd.command.publish/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>16</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>11</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>lib/beans/cbd.command.start/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>67</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>6</integer>
 		</dict>
 		<key>lib/beans/cbd.command.untouch/index.js</key>
 		<dict>
@@ -126,7 +140,7 @@
 				<key>column</key>
 				<integer>5</integer>
 				<key>line</key>
-				<integer>20</integer>
+				<integer>19</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -166,30 +180,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>75</integer>
 				<key>line</key>
-				<integer>25</integer>
+				<integer>24</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>27</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>19</integer>
-				<key>line</key>
-				<integer>25</integer>
-			</dict>
 		</dict>
 		<key>lib/beans/cbd.projects/getUpdatesFiles.js</key>
 		<dict>
@@ -210,28 +208,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>41</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>32</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>15</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/model.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>34</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>72</integer>
+				<integer>38</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>40</integer>
+			<integer>18</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/watcher.js</key>
 		<dict>
@@ -259,21 +257,21 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>2</integer>
+			<integer>10</integer>
 		</dict>
 		<key>lib/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>80</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>14</integer>
+				<integer>26</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>40</integer>
 		</dict>
 		<key>node_modules/beanpole/examples/default/index.js</key>
 		<dict>
@@ -332,6 +330,7 @@
 		<string>lib/beans/cbd.core/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
 		<string>lib/beans/cbd.projects/index.js</string>
+		<string>lib/beans/cbd.command.start/index.js</string>
 		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>

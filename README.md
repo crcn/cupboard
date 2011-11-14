@@ -176,6 +176,9 @@ Executes a command against the given project.
 	- `command` - Command to execute against the project.
 	- `args` - Arguments to pass onto given command.
 
+### Project.getScript(command, callback)
+
+Returns script assigned to command
 
 ### FileWatcher.on(event, callback)
 
