@@ -169,7 +169,7 @@ Watches file for any file changes.
 
 Loads all configuration settings for given project, including all target specific commands. 
 
-### Project.execute(ops)
+### Project.execute(ops, callback)
 
 Executes a command against the given project. 
 
