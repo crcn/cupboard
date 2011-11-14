@@ -1,2 +1,4 @@
 [commands]
 proj = open project.tmproj
+make = echo MAKE
+start = echo START
