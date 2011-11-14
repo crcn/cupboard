@@ -235,6 +235,13 @@ for DIR in `cbd dir --all`;
 	echo $DIR; # do stuff here
 done;
 ````
+
+Assuming you have `make`, and `start` specified in your project commands, you can easily start your project, and restart it whenever it's changed:
+
+```bash
+cbd make+start my-project --watch
+```
+
 	
 
 
