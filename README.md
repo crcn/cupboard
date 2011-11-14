@@ -114,7 +114,7 @@ Another valid command is:
 	
 That command will watch projects cupboard, and celeri, and invoke `some-command` on any change. 
 
-In some cases, you may want to ignore certain directories from triggering `--watch`. You can easily to ignore folders by adding a `.ignorewatch` file. 
+In some cases, you may want to ignore certain directories from triggering `--watch`. You can easily do that by adding a `.ignorewatch` file. 
 
 
 ## API
