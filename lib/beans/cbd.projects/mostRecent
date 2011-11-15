@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+SINCE_DATE=`date -r $1 '+%Y%m%d%H%M.%S'`
+
+MARKER=/tmp/older-than-$$;
+touch -t $SINCE_DATE $MARKER;
+REALPATH=`readlink $2`;
+
+find . -type f -newer $MARKER
+
+rm -f $TMP
