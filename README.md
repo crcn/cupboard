@@ -22,7 +22,11 @@ Repository management (GIT/NPM) for your projects
 
 ## Installation 
 
+Assuming you already have node.js, and NPM installed, just call:
+
 	npm install cupboard
+
+Or call the `./install` script.
 	 
 ## Plugins
 

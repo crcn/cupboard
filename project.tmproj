@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>README.md</string>
+	<string>lib/beans/cbd.command.list/index.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -33,7 +33,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>92</integer>
+			<integer>47</integer>
 		</dict>
 		<key>lib/beans/cbd.command.details/index.js</key>
 		<dict>
@@ -112,14 +112,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>9</integer>
 				<key>line</key>
-				<integer>52</integer>
+				<integer>69</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>38</integer>
+			<integer>98</integer>
 		</dict>
 		<key>lib/beans/cbd.command.publish/index.js</key>
 		<dict>
