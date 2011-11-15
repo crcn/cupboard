@@ -215,7 +215,7 @@ cupboard.getProjects('my-project', function(err, projects) {
 
 ## Writing Plugins
 
-- TODO - see [github](http://github.com/spiceapps.com/cupboard.github) plugin for now.
+- TODO - see [github](http://github.com/spiceapps/cupboard.github) plugin for now.
 
 
 
