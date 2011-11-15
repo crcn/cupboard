@@ -26,8 +26,8 @@ Repository management (GIT/NPM) for your projects
 	
 ## Plugins
 
-- [Github Plugin](http://github.com/spiceapps/cupboard.github) - basic commands: launch github page, launch github issues page.
-- [Scaffolding Plugin](http://github.com/spiceapps/cupboard.scaffold) - quickly create coffeescript/html5-boilerplate/etc. based projects. 
+- [Github Plugin](http://github.com/spiceapps/bean.cupboard.github) - basic commands: launch github page, launch github issues page.™
+- [Scaffolding Plugin](http://github.com/spiceapps/bean.cupboard.scaffold) - quickly create coffeescript/html5-boilerplate/etc. based projects. 
 - [Growl Plugin](http://github.com/spiceapps/bean.notify.growl) - get notified when commands are executed - useful for watching projects.
 	
 ## Basic Usage                                   
