@@ -30,6 +30,12 @@ Repository management (GIT/NPM) for your projects
 - [Scaffolding Plugin](http://github.com/spiceapps/bean.cupboard.scaffold) - quickly create coffeescript/html5-boilerplate/etc. based projects. 
 - [Growl Plugin](http://github.com/spiceapps/bean.notify.growl) - get notified when commands are executed - useful for watching projects.
 	
+### Installation
+
+	cbd install bean.notify.growl
+	cbd install bean.cupboard.github
+	cbd install bean.cupboard.scaffold
+
 ## Basic Usage                                   
                           
 For each project you want to use in cupboard, simply call this command in your project directory:
