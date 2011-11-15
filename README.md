@@ -10,7 +10,7 @@ Repository management (GIT/NPM) for your projects
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
 - Push to both NPM, and GIT with one command. 
-- **Install third-party plugins**
+- **Install third-party plugins** via [beanpole](https://github.com/spiceapps/beanpole)
 - Ability to call a command against multiple projects. e.g:
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
 	- `cbd open my-app+another-app` opens the given applications in finder.
@@ -35,6 +35,10 @@ Repository management (GIT/NPM) for your projects
 	cbd install bean.notify.growl
 	cbd install bean.cupboard.github
 	cbd install bean.cupboard.scaffold
+	
+or all together:
+
+	cbd install bean.notify.growl bean.cupboard.github bean.cupboard.scaffold
 
 ## Basic Usage                                   
                           
