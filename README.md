@@ -28,6 +28,7 @@ Repository management (GIT/NPM) for your projects
 
 - [cupboard.github](http://github.com/spiceapps/cupboard.github)
 - [cupboard.scaffold](http://github.com/spiceapps/cupboard.scaffold) 
+- [bean.notify.growl](http://github.com/spiceapps/bean.notify.growl)
 	
 ## Basic Usage                                   
                           
