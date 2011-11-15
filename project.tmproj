@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.command.install/index.js</string>
+	<string>lib/beans/cbd.projects/processor.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,28 +26,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>132</integer>
+				<integer>100</integer>
 				<key>line</key>
-				<integer>28</integer>
+				<integer>109</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>98</integer>
 		</dict>
 		<key>lib/beans/cbd.command.details/index.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
 				<integer>23</integer>
+				<key>line</key>
+				<integer>50</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>10</integer>
+			<integer>14</integer>
 		</dict>
 		<key>lib/beans/cbd.command.dir/index.js</key>
 		<dict>
@@ -68,14 +68,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>34</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>33</integer>
+			<integer>9</integer>
 		</dict>
 		<key>lib/beans/cbd.command.install/index.js</key>
 		<dict>
@@ -112,14 +112,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>34</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>52</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>37</integer>
+			<integer>38</integer>
 		</dict>
 		<key>lib/beans/cbd.command.publish/index.js</key>
 		<dict>
@@ -184,14 +184,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>26</integer>
 				<key>line</key>
-				<integer>36</integer>
+				<integer>28</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>14</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/execute</key>
 		<dict>
@@ -207,14 +207,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>lib/beans/cbd.projects/getUpdatesFiles.js</key>
+		<key>lib/beans/cbd.projects/getUpdatedFiles.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>34</integer>
+				<integer>28</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -226,58 +226,56 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>37</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>149</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>133</integer>
+			<integer>0</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/model.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>22</integer>
+				<integer>37</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>4</integer>
+			<integer>31</integer>
+		</dict>
+		<key>lib/beans/cbd.projects/mostRecent</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>22</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/processor.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>47</integer>
+				<integer>6</integer>
 				<key>line</key>
-				<integer>70</integer>
+				<integer>74</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>34</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>99</integer>
-				<key>line</key>
-				<integer>71</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>47</integer>
-				<key>line</key>
-				<integer>70</integer>
-			</dict>
+			<integer>41</integer>
 		</dict>
 		<key>lib/beans/cbd.projects/watcher.js</key>
 		<dict>
@@ -351,6 +349,332 @@
 				<integer>8</integer>
 			</dict>
 		</dict>
+		<key>node_modules/celeri/README.md</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/auth.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/confirm.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/exec.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/hello.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/hello2.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/table.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/examples/table2.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>14</integer>
+				<key>line</key>
+				<integer>28</integer>
+			</dict>
+		</dict>
+		<key>node_modules/celeri/examples/table3.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>52</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>14</integer>
+				<key>line</key>
+				<integer>54</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>52</integer>
+			</dict>
+		</dict>
+		<key>node_modules/celeri/lib/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>117</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>93</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/auth.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/backspace.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/confirm.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>19</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/exec.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>31</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/section.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/table.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>139</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>131</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/table2.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>13</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/modules/tree.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>5</integer>
+				<key>line</key>
+				<integer>18</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>11</integer>
+		</dict>
+		<key>node_modules/celeri/lib/npm-debug.log</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/lib/utils.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>22</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>node_modules/celeri/package.json</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>21</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>node_modules/watch_r/lib/index.js</key>
 		<dict>
 			<key>caret</key>
@@ -370,9 +694,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>4</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -386,6 +710,7 @@
 		<string>lib/beans/cbd.projects/processor.js</string>
 		<string>lib/beans/cbd.projects/config.js</string>
 		<string>package.json</string>
+		<string>node_modules/celeri/examples/hello2.js</string>
 		<string>lib/index.js</string>
 		<string>lib/beans/cbd.projects/execute</string>
 		<string>node_modules/watch_r/lib/index.js</string>
@@ -397,16 +722,37 @@
 		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>
+		<string>node_modules/celeri/examples/table3.js</string>
 		<string>lib/beans/cbd.command.dir/index.js</string>
 		<string>lib/beans/cbd.command.details/index.js</string>
+		<string>node_modules/celeri/README.md</string>
 		<string>lib/beans/cbd.command.list/index.js</string>
-		<string>lib/beans/cbd.projects/getUpdatesFiles.js</string>
+		<string>node_modules/celeri/lib/index.js</string>
+		<string>node_modules/celeri/examples/auth.js</string>
+		<string>node_modules/celeri/lib/modules/tree.js</string>
+		<string>node_modules/celeri/lib/modules/table2.js</string>
+		<string>node_modules/celeri/lib/modules/backspace.js</string>
+		<string>node_modules/celeri/lib/modules/auth.js</string>
+		<string>node_modules/celeri/lib/modules/table.js</string>
+		<string>node_modules/celeri/lib/utils.js</string>
+		<string>node_modules/celeri/lib/modules/exec.js</string>
+		<string>node_modules/celeri/examples/confirm.js</string>
+		<string>node_modules/celeri/examples/hello.js</string>
+		<string>node_modules/celeri/examples/exec.js</string>
+		<string>node_modules/celeri/examples/table.js</string>
+		<string>node_modules/celeri/lib/npm-debug.log</string>
+		<string>node_modules/celeri/lib/modules/section.js</string>
+		<string>node_modules/celeri/lib/modules/confirm.js</string>
+		<string>lib/beans/cbd.projects/getUpdatedFiles.js</string>
+		<string>lib/beans/cbd.projects/mostRecent</string>
 		<string>lib/bootstrap.js</string>
+		<string>node_modules/celeri/package.json</string>
+		<string>node_modules/celeri/examples/table2.js</string>
 		<string>lib/beans/cbd.projects/watcher.js</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1230, 874}}</string>
+	<string>{{0, 4}, {1224, 874}}</string>
 </dict>
 </plist>
