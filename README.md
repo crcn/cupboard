@@ -1,5 +1,3 @@
-Repository management (GIT/NPM) for your projects       
-
 
 ![Alt screenshot](http://i.imgur.com/Hae5C.png)    
 

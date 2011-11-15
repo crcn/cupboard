@@ -3,16 +3,16 @@
 source ./shell/core-bash.sh
 
 TMP=/tmp/cupboard-$RANDOM;
-DATA_DIR=/data #where mysql data is stored
+CBD_DIR=`pwd`;
 
 mkdir -p $TMP; cd $TMP;
 
 # node is required for elgatokb
 function install_node ()
 {
-	git clone https://github.com/joyent/node.git
-	cd node; ./configure; make; make install;
-	cd ../;
+	curl http://nodejs.org/dist/v0.6.1/node-v0.6.1.tar.gz > node.tar.gz;
+	tar -xf node.tar.gz; cd node-v0.6.1;
+	./configure; make; make install;
 }
 
 # npm module for node.js
@@ -22,6 +22,10 @@ function install_npm ()
 	chmod 755 install-npm.sh; ./install-npm.sh;
 	
 	# TODO - npm install
+	grey "Installing cupboard NPM modules\n"
+	cd $CBD_DIR;
+	npm install -g;
+	cd $TMP;
 }
 
 
