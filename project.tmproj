@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.command.list/index.js</string>
+	<string>lib/index.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,14 +26,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>45</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>130</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>47</integer>
+			<integer>0</integer>
+		</dict>
+		<key>install</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>26</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>1</integer>
 		</dict>
 		<key>lib/beans/cbd.command.details/index.js</key>
 		<dict>
@@ -112,9 +126,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>69</integer>
+				<integer>111</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -310,14 +324,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>105</integer>
 				<key>line</key>
-				<integer>68</integer>
+				<integer>28</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>44</integer>
+			<integer>7</integer>
 		</dict>
 		<key>node_modules/beanpole/examples/default/index.js</key>
 		<dict>
@@ -507,20 +521,6 @@
 				<integer>52</integer>
 			</dict>
 		</dict>
-		<key>node_modules/celeri/lib/index.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>117</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>93</integer>
-		</dict>
 		<key>node_modules/celeri/lib/modules/auth.js</key>
 		<dict>
 			<key>caret</key>
@@ -633,20 +633,6 @@
 			<key>firstVisibleLine</key>
 			<integer>11</integer>
 		</dict>
-		<key>node_modules/celeri/lib/npm-debug.log</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>node_modules/celeri/lib/utils.js</key>
 		<dict>
 			<key>caret</key>
@@ -703,6 +689,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>shell/bash-colors.sh</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>9</integer>
+				<key>line</key>
+				<integer>30</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>shell/core-bash.sh</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>38</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
@@ -710,11 +724,8 @@
 		<string>lib/beans/cbd.projects/processor.js</string>
 		<string>lib/beans/cbd.projects/config.js</string>
 		<string>package.json</string>
-		<string>node_modules/celeri/examples/hello2.js</string>
 		<string>lib/index.js</string>
 		<string>lib/beans/cbd.projects/execute</string>
-		<string>node_modules/watch_r/lib/index.js</string>
-		<string>node_modules/beanpole/examples/default/index.js</string>
 		<string>lib/beans/cbd.projects/model.js</string>
 		<string>lib/beans/cbd.core/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
@@ -722,32 +733,15 @@
 		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
 		<string>lib/beans/cbd.command.helpmenu/index.js</string>
-		<string>node_modules/celeri/examples/table3.js</string>
 		<string>lib/beans/cbd.command.dir/index.js</string>
 		<string>lib/beans/cbd.command.details/index.js</string>
-		<string>node_modules/celeri/README.md</string>
 		<string>lib/beans/cbd.command.list/index.js</string>
-		<string>node_modules/celeri/lib/index.js</string>
-		<string>node_modules/celeri/examples/auth.js</string>
-		<string>node_modules/celeri/lib/modules/tree.js</string>
-		<string>node_modules/celeri/lib/modules/table2.js</string>
-		<string>node_modules/celeri/lib/modules/backspace.js</string>
-		<string>node_modules/celeri/lib/modules/auth.js</string>
-		<string>node_modules/celeri/lib/modules/table.js</string>
-		<string>node_modules/celeri/lib/utils.js</string>
-		<string>node_modules/celeri/lib/modules/exec.js</string>
-		<string>node_modules/celeri/examples/confirm.js</string>
-		<string>node_modules/celeri/examples/hello.js</string>
-		<string>node_modules/celeri/examples/exec.js</string>
-		<string>node_modules/celeri/examples/table.js</string>
-		<string>node_modules/celeri/lib/npm-debug.log</string>
-		<string>node_modules/celeri/lib/modules/section.js</string>
-		<string>node_modules/celeri/lib/modules/confirm.js</string>
+		<string>install</string>
+		<string>shell/bash-colors.sh</string>
+		<string>shell/core-bash.sh</string>
 		<string>lib/beans/cbd.projects/getUpdatedFiles.js</string>
 		<string>lib/beans/cbd.projects/mostRecent</string>
 		<string>lib/bootstrap.js</string>
-		<string>node_modules/celeri/package.json</string>
-		<string>node_modules/celeri/examples/table2.js</string>
 		<string>lib/beans/cbd.projects/watcher.js</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
