@@ -100,12 +100,14 @@ say-hello=echo Hello $@
 
 The example `say-hello` in both bases produce the same result:
 
-![Alt terminal](http://i.imgur.com/M1k7w.png)                                      
+![Alt terminal](http://i.imgur.com/M1k7w.png)       
+
+                              
                              
 ### Default           
                   
 - `cbd init` - Adds an project to cupboard.
-- `cbd list` - Lit all the projects. Also contains details of what projects have been updated.         
+- `cbd list` - Lit all the projects. Also contains details of what projects have been updated.      
 - `cbd updates` - List projects with updates.                                                                          
 - `cbd publish <proj>` - Publishes given application.          
 - `cbd install <plugin>` - Installs a cupboard plugin.
@@ -121,13 +123,12 @@ The example `say-hello` in both bases produce the same result:
 
 You can easily watch any project, and invoke commands on change by adding `--watch`. Here's an example:
 
-	cbd make --all --watch  
-	
-Another valid command is:
+	cbd make+start my-project --watch  
 
-	cbd some-command cupboard+celeri --watch
 	
-That command will watch projects cupboard, and celeri, and invoke `some-command` on any change. 
+That command will watch `my-project`, and invoke `make` *and* `start` on any change - in that order. Here's what you get:
+
+ 
 
 In some cases, you may want to ignore certain directories from triggering `--watch`. You can easily do that by adding a `.ignorewatch` file. 
 
