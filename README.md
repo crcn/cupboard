@@ -1,7 +1,7 @@
 Repository management (GIT/NPM) for your projects       
 
 
-![Alt screenshot](http://i.imgur.com/YWIey.png)    
+![Alt screenshot](http://i.imgur.com/R7hHC.png)    
 
 
 ## Features                                
@@ -23,7 +23,7 @@ Repository management (GIT/NPM) for your projects
 ## Installation 
 
 	npm install cupboard
-	
+	 
 ## Plugins
 
 - [Github Plugin](http://github.com/spiceapps/bean.cupboard.github) - basic commands: launch github page, launch github issues page.
