@@ -2,7 +2,7 @@
 
 source ./shell/core-bash.sh
 
-TMP=/tmp/elgatodep-$RANDOM;
+TMP=/tmp/cupboard-$RANDOM;
 DATA_DIR=/data #where mysql data is stored
 
 mkdir -p $TMP; cd $TMP;
