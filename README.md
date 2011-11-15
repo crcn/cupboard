@@ -100,7 +100,7 @@ say-hello=echo Hello $@
 
 The example `say-hello` in both bases produce the same result:
 
-![Alt terminal](http://i.imgur.com/Hae5C.png)                                      
+![Alt terminal](http://i.imgur.com/M1k7w.png)                                      
                              
 ### Default           
                   
