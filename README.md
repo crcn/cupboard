@@ -128,7 +128,7 @@ You can easily watch any project, and invoke commands on change by adding `--wat
 	
 That command will watch `my-project`, and invoke `make` *and* `start` on any change - in that order. Here's what you get:
 
- 
+![Alt terminal](http://i.imgur.com/EscOM.png)
 
 In some cases, you may want to ignore certain directories from triggering `--watch`. You can easily do that by adding a `.ignorewatch` file. 
 
