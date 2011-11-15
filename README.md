@@ -1,7 +1,7 @@
 Repository management (GIT/NPM) for your projects       
 
 
-![Alt screenshot](http://i.imgur.com/R7hHC.png)    
+![Alt screenshot](http://i.imgur.com/Hae5C.png)    
 
 
 ## Features                                
@@ -15,7 +15,7 @@ Repository management (GIT/NPM) for your projects
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
 	- `cbd open my-app+another-app` opens the given applications in finder.
                                             
-## Requirements
+## Requirements  
 
 - [Node.js](http://nodejs.org)
 - [NPM](http://npmjs.org/)
@@ -88,15 +88,19 @@ You can specify custom commands for each project. There are few ways to do so. T
 
 ```ini
 [commands]
-my_custom_command=args
+say-hello=echo Hello $@
 ```
 
 The other option is to modify the project setting under `~/.cupboard/projects.conf`. Like so:
 
 ````ini
 [project:my-project:commands]
-my_custom_commands=args
-````                                                                  
+say-hello=echo Hello $@
+````                   
+
+The example `say-hello` in both bases produce the same result:
+
+![Alt terminal](http://i.imgur.com/Hae5C.png)                                      
                              
 ### Default           
                   
