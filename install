@@ -25,7 +25,8 @@ function install_npm ()
 }
 
 
-function on_confirm_n () {
+function on_confirm_n () 
+{
 	npm install n -g;
 }
 
