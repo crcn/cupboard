@@ -26,5 +26,5 @@ while(args.length)
 	}
 }
 
-require('../lib').execute(ops);   
+require('../lib/index').execute(ops);   
                     
