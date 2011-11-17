@@ -6,6 +6,6 @@ MARKER=/tmp/older-than-$$;
 touch -t $SINCE_DATE $MARKER;
 REALPATH=`readlink $2`;
 
-find . -type f -newer $MARKER
+find . -type f -newer $MARKER \( ! -iname ".*" \)
 
 rm -f $TMP
