@@ -253,6 +253,15 @@ for DIR in `cbd dir --all`;
 done;
 ````
 
+Bumping a project version:
+
+````
+cbd version my-project +0.0.1 # bump
+cbd version my-project # show version
+
+````
+
+
 Assuming you have `make`, and `start` specified in your project commands, you can easily start your project, and restart it whenever it's changed:
 
 ```bash
