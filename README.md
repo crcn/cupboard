@@ -255,10 +255,9 @@ done;
 
 Bumping a project version:
 
-````
+````bash
 cbd version my-project +0.0.1 # bump
 cbd version my-project # show version
-
 ````
 
 
