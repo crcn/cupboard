@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>lib/beans/cbd.command.untouch/index.js</string>
+	<string>lib/beans/cbd.projects/model.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -137,6 +137,20 @@
 			<key>firstVisibleLine</key>
 			<integer>59</integer>
 		</dict>
+		<key>lib/beans/cbd.command.link/index.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>26</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>lib/beans/cbd.command.list/index.js</key>
 		<dict>
 			<key>caret</key>
@@ -170,14 +184,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>27</integer>
+				<integer>7</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>36</integer>
+			</dict>
 		</dict>
 		<key>lib/beans/cbd.command.version/index.js</key>
 		<dict>
@@ -254,9 +284,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>27</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>14</integer>
+				<integer>15</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -759,6 +789,7 @@
 		<string>lib/beans/cbd.projects/model.js</string>
 		<string>lib/beans/cbd.core/index.js</string>
 		<string>lib/beans/cbd.command.untouch/index.js</string>
+		<string>lib/beans/cbd.command.link/index.js</string>
 		<string>lib/beans/cbd.projects/index.js</string>
 		<string>lib/beans/cbd.command.publish/index.js</string>
 		<string>lib/beans/cbd.command.install/index.js</string>
@@ -778,6 +809,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{132, 4}, {1224, 874}}</string>
+	<string>{{49, 115}, {1224, 874}}</string>
 </dict>
 </plist>
