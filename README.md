@@ -109,7 +109,8 @@ The example `say-hello` in both bases produce the same result:
 ````text
 
 Commands:               
-         help                            Shows the help menu                              
+         help                            Shows the help menu                             
+         init                            Adds a project in cwd to cupboard.                      
          list                            List all projects                                        
          updates                         List all projects with updates                             
          uninstall <plugin>              Uninstalls a plugin                                      
@@ -123,9 +124,8 @@ Commands:
          publish <proj>                  Publishes project                                        
          untouch <proj>                  Marks project as published                               
          version <proj> <vers>           Sets the project version                                 
-         <cmd> <proj>                    Calls custom command specified in project cupboard con...
-         remove <proj>                   Removes project from cupboard.                           
-         init                            Adds a project in cwd to cupboard.                       
+         remove <proj>                   Removes project from cupboard        
+         <cmd> <proj>                    Calls custom project command                    
 
 Examples:
          cd `cbd dir <proj>`             Changes the current working directory to given project.  
