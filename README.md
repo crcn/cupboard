@@ -118,7 +118,6 @@ Commands:
          details <proj>                  Shows project details                                    
          dir <proj>                      Returns the project path                   
          execute <proj> <script.js>      executes a script against project                               
-         scaffold <proj> <type>          Init scaffold template against proj                             
          link <proj>                     Links project globally                            
          find-link <proj> <link>         Finds project link against all projects                       
          publish <proj>                  Publishes project                                        
