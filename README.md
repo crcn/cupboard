@@ -106,20 +106,36 @@ The example `say-hello` in both bases produce the same result:
 
                               
                              
-### Default           
-                  
-- `cbd init` - Adds an project to cupboard.
-- `cbd list` - Lit all the projects. Also contains details of what projects have been updated.      
-- `cbd updates` - List projects with updates.                                                                          
-- `cbd publish <proj>` - Publishes given application.          
-- `cbd install <plugin>` - Installs a cupboard plugin.
-- `cbd uninstall <plugin>` - Uninstalls a cupboard plugin.
-- `cbd plugins` - Lists third-party plugins.
-- `cbd dir <proj>` - Returns the directory of the target app.     
-- `cbd details <proj>` - show details of given project.
-' `cbd untouch <proj>` - sets the given project to "updated"
-- `cbd <cmd> <proj>` - Custom command given for target application. Some examples:
-	- `cbd open-project my-projected` might open the my-project xcode/textmate project.
+````text
+
+Commands:               
+         help                            Shows the help menu                              
+         list                            List all projects                                        
+         updates                         List all projects with updates                             
+         uninstall <plugin>              Uninstalls a plugin                                      
+         install <plugin>                Installs a plugin                            
+         plugins                         Lists installed plugins                            
+         details <proj>                  Shows project details                                    
+         dir <proj>                      Returns the project path                   
+         execute <proj> <script.js>      executes a script against project                               
+         scaffold <proj> <type>          Init scaffold template against proj                             
+         link <proj>                     Links project globally                            
+         find-link <proj> <link>         Finds project link against all projects                       
+         publish <proj>                  Publishes project                                        
+         untouch <proj>                  Marks project as published                               
+         version <proj> <vers>           Sets the project version                                 
+         <cmd> <proj>                    Calls custom command specified in project cupboard con...
+         remove <proj>                   Removes project from cupboard.                           
+         init                            Adds a project in cwd to cupboard.                       
+
+Examples:
+         cd `cbd dir <proj>`             Changes the current working directory to given project.  
+         execute my-proj change-git.js                                                            
+         scaffold my-proj sublime+node                                                            
+         link <proj> --global            Links given project against all projects                 
+         make+start project --watch                                             
+
+````
 
 ### Watching Projects
 
