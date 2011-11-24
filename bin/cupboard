@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env /usr/local/bin/node
                           
 
 var args = process.argv.concat().splice(2),

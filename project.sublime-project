@@ -2,7 +2,22 @@
 	"folders":
 	[
 		{
-			"path": "/Users/craig/.cupboard/projects/cupboard"
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name":"cbd make",
+			"cmd":["cbd","make","cupboard"]
+		},
+		{
+			"name":"cbd start",
+			"cmd":["cbd","start","cupboard"]
+		},
+		{
+			"name":"cbd make+start",
+			"cmd":["cbd","make+start","cupboard"]
 		}
 	]
 }
