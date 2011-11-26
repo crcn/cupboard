@@ -1,11 +1,11 @@
 {
-    "author": "Craig Condon <craig@spiceapps.com>",
+    "author": "Craig Condon <craig@crcn.com>",
     "name": "cupboard",
     "description": "Reverse Repo System",
     "version": "0.1.11",
     "repository": {
         "type": "git",
-        "url": "git://github.com/spiceapps/cupboard.git"
+        "url": "git://github.com/crcn/cupboard.git"
     },
     "dependencies": {
         "gumbo": "0.1.2",
