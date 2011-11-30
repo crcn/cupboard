@@ -90,6 +90,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin NRxxGP.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "bin/cupboard",
 			"settings":
 			{
@@ -159,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -429,6 +437,32 @@
 				},
 				{
 					"buffer": 10,
+					"file": "/tmp/subl stdin NRxxGP.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "bin/cupboard",
 					"settings":
 					{
