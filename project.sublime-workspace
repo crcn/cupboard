@@ -109,7 +109,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 753,
+				"buffer_size": 754,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,7 +157,7 @@
 			"file": "lib/beans/cbd.command.list/index.js",
 			"settings":
 			{
-				"buffer_size": 2567,
+				"buffer_size": 2566,
 				"line_ending": "Unix"
 			}
 		},
@@ -189,7 +189,7 @@
 			"file": "lib/beans/cbd.projects/index.js",
 			"settings":
 			{
-				"buffer_size": 4169,
+				"buffer_size": 4170,
 				"line_ending": "Unix"
 			}
 		},
@@ -286,7 +286,6 @@
 	"groups":
 	[
 		{
-			"selected": 22,
 			"sheets":
 			[
 				{
@@ -612,15 +611,15 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 753,
+						"buffer_size": 754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								534,
-								534
+								0,
+								0
 							]
 						],
 						"settings":
@@ -657,7 +656,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 130.0,
+						"translation.y": 64.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -775,15 +774,15 @@
 					"file": "lib/beans/cbd.command.list/index.js",
 					"settings":
 					{
-						"buffer_size": 2567,
+						"buffer_size": 2566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								466,
-								466
+								421,
+								421
 							]
 						],
 						"settings":
@@ -792,7 +791,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1396.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -883,15 +882,15 @@
 					"file": "lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4169,
+						"buffer_size": 4170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								319,
-								319
+								3052,
+								3052
 							]
 						],
 						"settings":
@@ -900,7 +899,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1841.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
