@@ -1,3 +1,5 @@
+### Your Project Command Center
+
 
 ![Alt screenshot](http://i.imgur.com/Hae5C.png)    
 
@@ -110,7 +112,7 @@ The example `say-hello` in both bases produce the same result:
 
 Commands:               
          help                            Shows the help menu                             
-         init                            Adds a project in cwd to cupboard.                      
+         init                            Adds a project in cwd to cupboard                      
          list                            List all projects                                        
          updates                         List all projects with updates                             
          uninstall <plugin>              Uninstalls a plugin                                      
@@ -128,7 +130,7 @@ Commands:
          <cmd> <proj>                    Calls custom project command                    
 
 Examples:
-         cd `cbd dir <proj>`             Changes the current working directory to given project.  
+         cd `cbd dir <proj>`             Changes the current working directory to given project  
          execute my-proj change-git.js                                                            
          scaffold my-proj sublime+node                                                            
          link <proj> --global            Links given project against all projects                 
