@@ -24,7 +24,9 @@
         "step": "*"
     },
     "bin": {
-        "cbd": "./bin/cupboard",
+        "cbd": "./bin/cupboard"
+    },
+    "scripts": {
         "install": "./bin/install"
     },
     "nexe-main": "./bin/cupboard.js",
