@@ -25,7 +25,7 @@
     },
     "bin": {
         "cbd": "./bin/cupboard",
-        "install": "./lib/install"
+        "install": "./bin/install"
     },
     "nexe-main": "./bin/cupboard.js",
     "devDependencies": {}
