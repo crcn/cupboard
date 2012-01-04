@@ -12,9 +12,9 @@ exec('mkdir -p '+process.env.CONF_DIR+'; mkdir -p '+ process.env.CONF_DIR + '/my
 		
 		if(err) {
 
-			var cfg = "; DO NOT modify this config file - add custom scripts to my_conf/* \
-			[include] \
-			files = files = conf/*.conf my_conf/*.conf \
+			var cfg = "; DO NOT modify this config file - add custom scripts to my_conf/* \n\n \
+			[include] \n \
+			files = files = conf/*.conf my_conf/*.conf \n \
 			";
 			
 			
