@@ -1,7 +1,7 @@
 {
     "author": "Craig Condon <craig@crcn.com>",
     "name": "cupboard",
-    "description": "Your project command center",
+    "description": "Reverse Repo System",
     "version": "0.1.14",
     "repository": {
         "type": "git",
@@ -25,7 +25,7 @@
     },
     "bin": {
         "cbd": "./bin/cupboard",
-        "install": "./bin/install"
+        "install": "./lib/install"
     },
     "nexe-main": "./bin/cupboard.js",
     "devDependencies": {}
