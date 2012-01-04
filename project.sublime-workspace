@@ -19,7 +19,7 @@
 			"file": "/Users/craig/.cupboard/projects/cupboard/lib/index.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 2514,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 4170,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,13 +55,10 @@
 			}
 		},
 		{
-			"contents": "\n![Alt screenshot](http://i.imgur.com/Hae5C.png)    \n\n\n## Features                                \n           \n- All projects accessible via the `cbd` cli.\n- easily identify which projects have been updated. \n- Customizable actions: publish, bump, etc.      \n- Push to both NPM, and GIT with one command. \n- **Install third-party plugins** via [beanpole](https://github.com/spiceapps/beanpole)\n- Ability to call a command against multiple projects. e.g:\n	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.\n	- `cbd open my-app+another-app` opens the given applications in finder.\n                                            \n## Requirements  \n\n- [Node.js](http://nodejs.org)\n- [NPM](http://npmjs.org/)\n\n## Installation \n\nAssuming you already have node.js, and NPM installed, just call:\n\n	npm install cupboard\n\nOr call the `./install` script.\n	 \n## Plugins\n\n- [Github Plugin](http://github.com/spiceapps/bean.cupboard.github) - basic commands: launch github page, launch github issues page.\n- [Scaffolding Plugin](http://github.com/spiceapps/bean.cupboard.scaffold) - quickly create coffeescript/html5-boilerplate/etc. based projects. \n- [Growl Plugin](http://github.com/spiceapps/bean.notify.growl) - get notified when commands are executed - useful for watching projects.\n	\n### Installation\n\n	cbd install bean.notify.growl\n	cbd install bean.cupboard.github\n	cbd install bean.cupboard.scaffold\n	\nor all together:\n\n	cbd install bean.notify.growl bean.cupboard.github bean.cupboard.scaffold\n\n## Basic Usage                                   \n                          \nFor each project you want to use in cupboard, simply call this command in your project directory:\n                                            \n	cbd init               \n	\nYou can also provide a path:\n\n	cbd init /path/to/project\n\nThat'll setup a basic GIT configuration. There are however a few additional options. If you want to add NPM and GIT, just swap in the template like so:\n\n	cbd init --tpl=git+npm\n	\n\n## Templates \n\ntemplates allow to easily specify a set of custom commands for any given project. Here's an example:\n\n\n```ini\n\n[template:svn:commands]\npublish=svn commit ...\nmy-custom-command\n\n```\n\n\nWhen writing custom templates, or any custom configuration, they should be placed in `~/.cupboard/my_conf/`. The example above might be written to `~/.cupboard/my_conf/svn.conf`. After that, you can start using it:\n\n	cbd init --tpl=svn\n	\n### Default\n\nThe following templates come with cupboard:\n\n- `git+npm`\n- `git`\n\n\n\n## Commands\n\nYou can specify custom commands for each project. There are few ways to do so. The first option would be to create a `/path/to/project/.cupboard` file. An example might be:\n\n```ini\n[commands]\nsay-hello=echo Hello $@\n```\n\nThe other option is to modify the project setting under `~/.cupboard/projects.conf`. Like so:\n\n````ini\n[project:my-project:commands]\nsay-hello=echo Hello $@\n````                   \n\nThe example `say-hello` in both bases produce the same result:\n\n![Alt terminal](http://i.imgur.com/M1k7w.png)       \n\n                              \n                             \n````text\n\nCommands:               \n         help                            Shows the help menu                             \n         init                            Adds a project in cwd to cupboard                      \n         list                            List all projects                                        \n         updates                         List all projects with updates                             \n         uninstall <plugin>              Uninstalls a plugin                                      \n         install <plugin>                Installs a plugin                            \n         plugins                         Lists installed plugins                            \n         details <proj>                  Shows project details                                    \n         dir <proj>                      Returns the project path                   \n         execute <proj> <script.js>      executes a script against project                               \n         link <proj>                     Links project globally                            \n         find-link <proj> <link>         Finds project link against all projects                       \n         publish <proj>                  Publishes project                                        \n         untouch <proj>                  Marks project as published                               \n         version <proj> <vers>           Sets the project version                                 \n         remove <proj>                   Removes project from cupboard        \n         <cmd> <proj>                    Calls custom project command                    \n\nExamples:\n         cd `cbd dir <proj>`             Changes the current working directory to given project  \n         execute my-proj change-git.js                                                            \n         scaffold my-proj sublime+node                                                            \n         link <proj> --global            Links given project against all projects                 \n         make+start project --watch                                             \n\n````\n\n### Watching Projects\n\nYou can easily watch any project, and invoke commands on change by adding `--watch`. Here's an example:\n\n	cbd make+start my-project --watch  \n\n	\nThat command will watch `my-project`, and invoke `make` *and* `start` on any change - in that order. Here's what you get:\n\n![Alt terminal](http://i.imgur.com/EscOM.png)\n\nIn some cases, you may want to ignore certain directories from triggering `--watch`. You can easily do that by adding a `.ignorewatch` file. \n\n\n## API\n\n### cupboard.getProjects(projects, callback)\n\nReturns all the projects registered in cupboard.\n\n- `projects` - can be a string, or an array of projects. String can also be `--all`, or `project+another-project`.\n\n````javascript\n\nvar cupboard = require('cupboard');\n\ncupboard.getProjects('bonsai', function(err, projects) {\n	\n	projects.forEach(function(project) {\n		\n		console.log('Listing %s changes:', project.name());\n		\n		//return list of changed files for given project\n		project.getUpdatedFiles(function(err, files) {\n			\n			\n		});\n	});\n});\n````\n\n### Project.name()\n\nReturns the name of the given project.\n\n### Project.path()\n\nReturns the symlink path of the given project.\n\n### Project.get(property)\n\nReturns a property specified in the `projects.conf` file under the given project.\n\n### Project.untouch()\n\n\"Untouches\" project so no changes will be listed.\n\n### Project.watch():FileWatcher\n \nWatches file for any file changes.\n\n### Project.loadConfig(callback)\n\nLoads all configuration settings for given project, including all target specific commands. \n\n### Project.execute(ops, callback)\n\nExecutes a command against the given project. \n\n- `ops`\n	- `command` - Command to execute against the project.\n	- `args` - Arguments to pass onto given command.\n\n### Project.getScript(command, callback)\n\nReturns script assigned to command\n\n### FileWatcher.on(event, callback)\n\n- `event`\n    - `change` - file changed\n	- `add` - file added\n	- `remove` - file removed\n	\n#### An example:\n\nIn the `.cupboard` file located in `path/to/my-project`:\n\n````ini\n\n[commands]\nsay-hello=echo Hello $@\n\n````\n\nIn your node.js script:\n\n````javascript\n\ncupboard.getProjects('my-project', function(err, projects) {\n	\n	var myProject = projects[0];\n	\n	\n	myProject.execute({ command: 'say-hello' args: ['Craig'] }); //terminal print \"Hello Craig!\"\n	myProject.execute({ command: 'publish', args: ['Some commit message']})\n});\n\n````\n\n## Writing Plugins\n\n- TODO - see [github](http://github.com/spiceapps/cupboard.github) plugin for now.\n\n\n\n## Useful tricks\n\nEasily change to the directory of any project:\n\n````bash\ncd `cbd dir my-project`\n````\n\nInvoke a command against all project directories:\n\n````bash\nfor DIR in `cbd dir --all`; \n	echo $DIR; # do stuff here\ndone;\n````\n\nBumping a project version:\n\n````bash\ncbd version my-project +0.0.1 # bump\ncbd version my-project # show version\n````\n\n\nAssuming you have `make`, and `start` specified in your project commands, you can easily start your project, and restart it whenever it's changed:\n\n```bash\ncbd make+start my-project --watch\n```\n\n	\n\n\n              \n\n                       \n\n\n\n\n                                    \n\n",
 			"file": "README.md",
-			"file_size": 8399,
-			"file_write_time": 1322161548000000,
 			"settings":
 			{
-				"buffer_size": 8397,
+				"buffer_size": 8430,
 				"line_ending": "Unix"
 			}
 		},
@@ -197,7 +194,7 @@
 			"file": "lib/beans/cbd.core/index.js",
 			"settings":
 			{
-				"buffer_size": 502,
+				"buffer_size": 501,
 				"line_ending": "Unix"
 			}
 		},
@@ -206,6 +203,14 @@
 			"settings":
 			{
 				"buffer_size": 1345,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin HCuL6x.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -286,6 +291,7 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -319,7 +325,7 @@
 					"file": "/Users/craig/.cupboard/projects/cupboard/lib/index.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 2514,
 						"regions":
 						{
 						},
@@ -346,7 +352,7 @@
 					"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 4170,
 						"regions":
 						{
 						},
@@ -452,15 +458,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 8397,
+						"buffer_size": 8430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3111,
-								3111
+								31,
+								31
 							]
 						],
 						"settings":
@@ -469,7 +475,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1614.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -909,15 +915,15 @@
 					"file": "lib/beans/cbd.core/index.js",
 					"settings":
 					{
-						"buffer_size": 502,
+						"buffer_size": 501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								224,
-								227
+								0,
+								0
 							]
 						],
 						"settings":
@@ -951,6 +957,32 @@
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/tmp/subl stdin HCuL6x.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
