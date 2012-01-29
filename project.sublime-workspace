@@ -173,7 +173,7 @@
 			"file": "lib/beans/cbd.command.helpmenu/index.js",
 			"settings":
 			{
-				"buffer_size": 1497,
+				"buffer_size": 1495,
 				"line_ending": "Unix"
 			}
 		},
@@ -197,7 +197,7 @@
 			"file": "lib/beans/cbd.command.list/index.js",
 			"settings":
 			{
-				"buffer_size": 2566,
+				"buffer_size": 2573,
 				"line_ending": "Unix"
 			}
 		},
@@ -226,13 +226,10 @@
 			}
 		},
 		{
-			"contents": "var project = require('./model'),\nvine = require('vine'),\npath = require('path'),\nexec = require('child_process').exec;\n\nexports.plugin = function(router) {\n		\n	var Project, config, commands = {};\n	\n	router.on({\n		\n		/**\n		 */\n		\n		'push init': function() {\n			\n			router.collect('project/command', function(err, cmd) {\n				\n				var cmds = cmd instanceof Array ? cmd : [cmd];\n\n				cmds.forEach(function(cmd) {\n					if(!(cmd.name instanceof Array)) cmd.name = cmd.name.split('+');\n\n					cmd.name.forEach(function(name)\n					{\n						commands[name] = cmd;\n					})\n				});\n				\n				\n			});\n		},\n		\n		/**\n		 * executes a command against target projects \n		 */\n		\n		'pull projects -> command/execute/:cmd OR projects/execute/:cmd': function(req, res) {\n			\n			var running = req.projects.length;  \n\n			\n			if(!running) return vine.result([]).end(res);\n			\n			req.projects.forEach(function(project) {\n				\n				var cmd = req.query.command,\n				target = commands[cmd] || project;\n\n				\n				target.execute.call(project, Structr.copy(req.query), function(err, result)\n				{\n					if(!(--running)) return vine.result(1).end(res);\n				});\n			});\n			  \n		},\n		\n		\n		/**\n		 * adds a project to cupboard\n		 */\n		\n		'pull command/execute/init OR commmand/execute/add': function(req, res) {\n				\n			var ops = req.query,\n			\n			//source is either explicitly defined as an argument, OR in the CWD of cupboard\n			projectPath = ops.args.length ? ops.args.shift() : process.cwd(),\n			\n			//extend this setting - inherits commands\n			tpl = 'template:' + (ops.tpl || config.get('template:default') || 'git'),\n			\n			//assume this is the project name\n			projectName = path.basename(projectPath),\n			\n			projectId = Project.getId(projectName);\n			\n			\n			Project.findOne({ _id: projectId }, function(err, item) {\n				\n				if(item) return vine.error('The project \"**%s**\" already exist', projectName).end(res);\n				\n				var doc = {\n					_id: projectId,\n					tpl: tpl\n				},\n				lnPath = Project.getPath(projectName),\n				lnDir = path.dirname(lnPath),\n\n				//n 0.4 vs 0.6\n				relPath = path.relative ? path.relative(path.dirname(lnPath), projectPath) : projectPath;\n				\n\n				exec('mkdir -p '+Project.getPath() + '; ln -s ' + relPath + ' ' + lnPath, function(err, stdout) {\n					\n					if(err) return vine.error(err.message).end(res);\n					\n					var project = new Project(doc);\n					\n					project.save(function(err, result) {\n						\n						if(err) return vine.error('Unable to save project \"**%s**\"', projectName).end(res);\n						\n	 					return vine.success('Successfuly added project \"**%s**\"', projectName).result({ color: 'green' }).end(res);\n					});\n				});\n				\n			});\n		},\n		\n		/**\n		 */\n		\n		'pull projects -> command/execute/remove': function(req, res) {\n			\n			var response = vine.api();\n			\n			req.projects.forEach(function(project) {\n				\n				project.remove();\n				\n				response.success('Removed \"**%s**\"', project.name());\n				\n				exec('rm ' + project.path(), function(){});\n			});\n			\n			response.result({ color: 'green' }).end(res);\n		},\n		\n		/**\n		 * returns target projects in a given command. E.g: cbd publish --all, or cbd publish app+app\n		 */\n		\n		'pull projects OR projects/:target': function(req, res) {\n			\n			var ops = req.query;\n\n			 \n			if(ops.all) {\n				\n				ops.projectName == '--all';\n			}\n			else {\n				\n				//target, or use CWD\n		 		ops.projectName = ops.target || (ops.args.length ? ops.args.shift() : path.basename(process.cwd()));\n			}\n\n			\n			Project.find(ops.projectName, function(err, projects) {\n				\n				//attach onto the request so anything routes after this get the projects. example above\n				req.projects = projects;\n				\n				//called explicitly? return the prjoects\n				if(!req.next()) vine.result(projects).end(res);\n			});\n		},\n		\n		/**\n		 */\n		\n		'push cbd/config': function(cfg) {\n			config = cfg;\n			Project = project.init(cfg, router);\n		},\n		\n		/**\n		 */\n		\n		'collect help/item': function(req, res) {\n			\n			res.end({\n				commands: [ {\n					command: 'init',\n					desc: 'Adds a project in cwd to cupboard.'\n				},\n				{\n					command: 'remove <proj>',\n					desc: 'Removes project from cupboard.'\n				},\n				{\n					command: '<cmd> <proj>',\n					desc: 'Calls custom command specified in project cupboard config.'\n				}],\n				examples: [{\n					command: 'make+start project --watch',\n					desc: ''\n				}]\n			});\n		}\n	});\n	\n	\n}",
 			"file": "lib/beans/cbd.projects/index.js",
-			"file_size": 4362,
-			"file_write_time": 1326611982000000,
 			"settings":
 			{
-				"buffer_size": 4341,
+				"buffer_size": 4344,
 				"line_ending": "Unix"
 			}
 		},
@@ -280,7 +277,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2519,
+				"buffer_size": 2514,
 				"line_ending": "Unix"
 			}
 		},
@@ -301,7 +298,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "/tmp/subl stdin ZBuVez.txt",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -351,6 +351,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"next",
+			"displayHelp",
+			"beanpoll",
 			"init",
 			"readlin",
 			"projectPath",
@@ -395,7 +398,7 @@
 	"groups":
 	[
 		{
-			"selected": 36,
+			"selected": 27,
 			"sheets":
 			[
 				{
@@ -542,8 +545,8 @@
 						"selection":
 						[
 							[
-								660,
-								660
+								183,
+								183
 							]
 						],
 						"settings":
@@ -754,8 +757,8 @@
 						"selection":
 						[
 							[
-								289,
-								289
+								489,
+								496
 							]
 						],
 						"settings":
@@ -782,8 +785,8 @@
 						"selection":
 						[
 							[
-								420,
-								432
+								225,
+								225
 							]
 						],
 						"settings":
@@ -914,8 +917,8 @@
 						"selection":
 						[
 							[
-								348,
-								348
+								151,
+								151
 							]
 						],
 						"settings":
@@ -934,15 +937,15 @@
 					"file": "lib/beans/cbd.command.helpmenu/index.js",
 					"settings":
 					{
-						"buffer_size": 1497,
+						"buffer_size": 1495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1319,
-								1319
+								119,
+								119
 							]
 						],
 						"settings":
@@ -951,7 +954,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 845.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -968,8 +971,8 @@
 						"selection":
 						[
 							[
-								277,
-								277
+								280,
+								280
 							]
 						],
 						"settings":
@@ -978,7 +981,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 705.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1015,15 +1018,15 @@
 					"file": "lib/beans/cbd.command.list/index.js",
 					"settings":
 					{
-						"buffer_size": 2566,
+						"buffer_size": 2573,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								421
+								354,
+								354
 							]
 						],
 						"settings":
@@ -1032,7 +1035,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1076,8 +1079,8 @@
 						"selection":
 						[
 							[
-								191,
-								191
+								203,
+								203
 							]
 						],
 						"settings":
@@ -1103,8 +1106,8 @@
 						"selection":
 						[
 							[
-								245,
-								245
+								169,
+								169
 							]
 						],
 						"settings":
@@ -1123,15 +1126,15 @@
 					"file": "lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4341,
+						"buffer_size": 4344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2139,
-								2139
+								3443,
+								3443
 							]
 						],
 						"settings":
@@ -1140,7 +1143,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1042.0,
+						"translation.y": 1832.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1157,8 +1160,8 @@
 						"selection":
 						[
 							[
-								448,
-								456
+								361,
+								361
 							]
 						],
 						"settings":
@@ -1184,8 +1187,8 @@
 						"selection":
 						[
 							[
-								220,
-								220
+								159,
+								159
 							]
 						],
 						"settings":
@@ -1283,15 +1286,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2519,
+						"buffer_size": 2514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1903,
-								1903
+								880,
+								880
 							]
 						],
 						"settings":
@@ -1300,7 +1303,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 841.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
