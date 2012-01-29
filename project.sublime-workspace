@@ -19,7 +19,7 @@
 			"file": "/Users/craig/.cupboard/projects/cupboard/lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2514,
+				"buffer_size": 2519,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 			"settings":
 			{
-				"buffer_size": 4170,
+				"buffer_size": 4361,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,6 +143,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin YuDc1B.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"contents": "exec = require('child_process').exec,\nfs = require('fs');\n\nrequire('./config');\n\n//needed ONLY on first time initializing app \nexec('mkdir -p '+process.env.CONF_DIR+'; mkdir -p '+ process.env.CONF_DIR + '/my_conf' +'; ln -s ' + __dirname + '/../conf/ ' + process.env.CONF_DIR + '/conf;', function() {\n	\n	fs.stat(process.env.MAIN_CFG, function(err, stat) {\n		\n		if(err) {\n\n			var cfg = \"; DO NOT modify this config file - add custom scripts to my_conf/* \\\n			[include] \\\n			files = files = conf/*.conf my_conf/*.conf \\\n			\";\n			\n			\n			fs.writeFileSync(process.env.MAIN_CFG, cfg);\n		}\n	})\n});",
 			"file": "lib/install.js",
 			"file_size": 591,
@@ -218,10 +226,13 @@
 			}
 		},
 		{
+			"contents": "var project = require('./model'),\nvine = require('vine'),\npath = require('path'),\nexec = require('child_process').exec;\n\nexports.plugin = function(router) {\n		\n	var Project, config, commands = {};\n	\n	router.on({\n		\n		/**\n		 */\n		\n		'push init': function() {\n			\n			router.collect('project/command', function(err, cmd) {\n				\n				var cmds = cmd instanceof Array ? cmd : [cmd];\n\n				cmds.forEach(function(cmd) {\n					if(!(cmd.name instanceof Array)) cmd.name = cmd.name.split('+');\n\n					cmd.name.forEach(function(name)\n					{\n						commands[name] = cmd;\n					})\n				});\n				\n				\n			});\n		},\n		\n		/**\n		 * executes a command against target projects \n		 */\n		\n		'pull projects -> command/execute/:cmd OR projects/execute/:cmd': function(req, res) {\n			\n			var running = req.projects.length;  \n\n			\n			if(!running) return vine.result([]).end(res);\n			\n			req.projects.forEach(function(project) {\n				\n				var cmd = req.query.command,\n				target = commands[cmd] || project;\n\n				\n				target.execute.call(project, Structr.copy(req.query), function(err, result)\n				{\n					if(!(--running)) return vine.result(1).end(res);\n				});\n			});\n			  \n		},\n		\n		\n		/**\n		 * adds a project to cupboard\n		 */\n		\n		'pull command/execute/init OR commmand/execute/add': function(req, res) {\n				\n			var ops = req.query,\n			\n			//source is either explicitly defined as an argument, OR in the CWD of cupboard\n			projectPath = ops.args.length ? ops.args.shift() : process.cwd(),\n			\n			//extend this setting - inherits commands\n			tpl = 'template:' + (ops.tpl || config.get('template:default') || 'git'),\n			\n			//assume this is the project name\n			projectName = path.basename(projectPath),\n			\n			projectId = Project.getId(projectName);\n			\n			\n			Project.findOne({ _id: projectId }, function(err, item) {\n				\n				if(item) return vine.error('The project \"**%s**\" already exist', projectName).end(res);\n				\n				var doc = {\n					_id: projectId,\n					tpl: tpl\n				},\n				lnPath = Project.getPath(projectName),\n				lnDir = path.dirname(lnPath),\n\n				//n 0.4 vs 0.6\n				relPath = path.relative ? path.relative(path.dirname(lnPath), projectPath) : projectPath;\n				\n\n				exec('mkdir -p '+Project.getPath() + '; ln -s ' + relPath + ' ' + lnPath, function(err, stdout) {\n					\n					if(err) return vine.error(err.message).end(res);\n					\n					var project = new Project(doc);\n					\n					project.save(function(err, result) {\n						\n						if(err) return vine.error('Unable to save project \"**%s**\"', projectName).end(res);\n						\n	 					return vine.success('Successfuly added project \"**%s**\"', projectName).result({ color: 'green' }).end(res);\n					});\n				});\n				\n			});\n		},\n		\n		/**\n		 */\n		\n		'pull projects -> command/execute/remove': function(req, res) {\n			\n			var response = vine.api();\n			\n			req.projects.forEach(function(project) {\n				\n				project.remove();\n				\n				response.success('Removed \"**%s**\"', project.name());\n				\n				exec('rm ' + project.path(), function(){});\n			});\n			\n			response.result({ color: 'green' }).end(res);\n		},\n		\n		/**\n		 * returns target projects in a given command. E.g: cbd publish --all, or cbd publish app+app\n		 */\n		\n		'pull projects OR projects/:target': function(req, res) {\n			\n			var ops = req.query;\n\n			 \n			if(ops.all) {\n				\n				ops.projectName == '--all';\n			}\n			else {\n				\n				//target, or use CWD\n		 		ops.projectName = ops.target || (ops.args.length ? ops.args.shift() : path.basename(process.cwd()));\n			}\n\n			\n			Project.find(ops.projectName, function(err, projects) {\n				\n				//attach onto the request so anything routes after this get the projects. example above\n				req.projects = projects;\n				\n				//called explicitly? return the prjoects\n				if(!req.next()) vine.result(projects).end(res);\n			});\n		},\n		\n		/**\n		 */\n		\n		'push cbd/config': function(cfg) {\n			config = cfg;\n			Project = project.init(cfg, router);\n		},\n		\n		/**\n		 */\n		\n		'collect help/item': function(req, res) {\n			\n			res.end({\n				commands: [ {\n					command: 'init',\n					desc: 'Adds a project in cwd to cupboard.'\n				},\n				{\n					command: 'remove <proj>',\n					desc: 'Removes project from cupboard.'\n				},\n				{\n					command: '<cmd> <proj>',\n					desc: 'Calls custom command specified in project cupboard config.'\n				}],\n				examples: [{\n					command: 'make+start project --watch',\n					desc: ''\n				}]\n			});\n		}\n	});\n	\n	\n}",
 			"file": "lib/beans/cbd.projects/index.js",
+			"file_size": 4362,
+			"file_write_time": 1326611982000000,
 			"settings":
 			{
-				"buffer_size": 4336,
+				"buffer_size": 4341,
 				"line_ending": "Unix"
 			}
 		},
@@ -262,6 +273,38 @@
 			"settings":
 			{
 				"buffer_size": 23,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/index.js",
+			"settings":
+			{
+				"buffer_size": 2519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin VyUU3B.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin Nl6iq8.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin ZBuVez.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -308,6 +351,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"init",
 			"readlin",
 			"projectPath",
 			"require",
@@ -351,7 +395,7 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 36,
 			"sheets":
 			[
 				{
@@ -385,7 +429,7 @@
 					"file": "/Users/craig/.cupboard/projects/cupboard/lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2514,
+						"buffer_size": 2519,
 						"regions":
 						{
 						},
@@ -412,7 +456,7 @@
 					"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4170,
+						"buffer_size": 4361,
 						"regions":
 						{
 						},
@@ -807,6 +851,32 @@
 				},
 				{
 					"buffer": 17,
+					"file": "/tmp/subl stdin YuDc1B.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
 					"file": "lib/install.js",
 					"settings":
 					{
@@ -833,7 +903,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "lib/beans/cbd.command.dir/index.js",
 					"settings":
 					{
@@ -860,7 +930,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "lib/beans/cbd.command.helpmenu/index.js",
 					"settings":
 					{
@@ -887,7 +957,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
 					"file": "lib/beans/cbd.command.install/index.js",
 					"settings":
 					{
@@ -898,8 +968,8 @@
 						"selection":
 						[
 							[
-								315,
-								315
+								277,
+								277
 							]
 						],
 						"settings":
@@ -908,13 +978,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 856.0,
+						"translation.y": 705.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 22,
 					"file": "lib/beans/cbd.command.link/index.js",
 					"settings":
 					{
@@ -941,7 +1011,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 23,
 					"file": "lib/beans/cbd.command.list/index.js",
 					"settings":
 					{
@@ -968,7 +1038,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 24,
 					"file": "lib/beans/cbd.command.publish/index.js",
 					"settings":
 					{
@@ -995,7 +1065,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 25,
 					"file": "lib/beans/cbd.command.untouch/index.js",
 					"settings":
 					{
@@ -1022,7 +1092,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 26,
 					"file": "lib/beans/cbd.command.version/index.js",
 					"settings":
 					{
@@ -1049,11 +1119,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 27,
 					"file": "lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4336,
+						"buffer_size": 4341,
 						"regions":
 						{
 						},
@@ -1070,13 +1140,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 931.0,
+						"translation.y": 1042.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 27,
+					"buffer": 28,
 					"file": "lib/beans/cbd.core/index.js",
 					"settings":
 					{
@@ -1103,7 +1173,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 29,
 					"file": "lib/beans/cbd.command.details/index.js",
 					"settings":
 					{
@@ -1130,7 +1200,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 30,
 					"file": "/tmp/subl stdin HCuL6x.txt",
 					"settings":
 					{
@@ -1156,7 +1226,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 31,
 					"file": "bin/install",
 					"settings":
 					{
@@ -1183,7 +1253,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 32,
 					"file": "conf/main.conf",
 					"settings":
 					{
@@ -1196,6 +1266,111 @@
 							[
 								23,
 								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "lib/index.js",
+					"settings":
+					{
+						"buffer_size": 2519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1903,
+								1903
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 841.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/tmp/subl stdin VyUU3B.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "/tmp/subl stdin Nl6iq8.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "/tmp/subl stdin ZBuVez.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
