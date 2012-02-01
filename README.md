@@ -10,6 +10,7 @@
 - easily identify which projects have been updated. 
 - Customizable actions: publish, bump, etc.      
 - Push to both NPM, and GIT with one command. 
+- Run processes in parallel
 - **Install third-party plugins** via [beanpole](https://github.com/spiceapps/beanpole)
 - Ability to call a command against multiple projects. e.g:
 	- `cbd ignore --all node_modules` adds node_modules to all .gitignore files.
