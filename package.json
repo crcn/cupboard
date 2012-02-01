@@ -2,7 +2,7 @@
     "author": "Craig Condon <craig@crcn.com>",
     "name": "cupboard",
     "description": "Reverse Repo System",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "repository": {
         "type": "git",
         "url": "git://github.com/crcn/cupboard.git"
