@@ -1,9 +1,4 @@
 node_modules
 data
-node_modules
-beanpole node_modules
-beanpole node_modules
-beanpoll node_modules
-beanpoll node_modules
-.DS_Store
-
+project.sublime-project
+project.sublime-workspace
