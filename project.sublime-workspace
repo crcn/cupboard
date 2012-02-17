@@ -106,7 +106,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 815,
+				"buffer_size": 814,
 				"line_ending": "Unix"
 			}
 		},
@@ -352,7 +352,7 @@
 			"file": "lib/beans/cbd.projects/getUpdatedFiles.js",
 			"settings":
 			{
-				"buffer_size": 1660,
+				"buffer_size": 1661,
 				"line_ending": "Unix"
 			}
 		},
@@ -360,7 +360,15 @@
 			"file": ".cupboard",
 			"settings":
 			{
-				"buffer_size": 117,
+				"buffer_size": 87,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin zV8gzp.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -789,7 +797,7 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 815,
+						"buffer_size": 814,
 						"regions":
 						{
 						},
@@ -1589,7 +1597,7 @@
 					"file": "lib/beans/cbd.projects/getUpdatedFiles.js",
 					"settings":
 					{
-						"buffer_size": 1660,
+						"buffer_size": 1661,
 						"regions":
 						{
 						},
@@ -1606,7 +1614,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 134.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1616,15 +1624,41 @@
 					"file": ".cupboard",
 					"settings":
 					{
-						"buffer_size": 117,
+						"buffer_size": 87,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								58
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "/tmp/subl stdin zV8gzp.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
