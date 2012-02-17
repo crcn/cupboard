@@ -3,5 +3,4 @@ proj = subl --project project.sublime-project
 
 
 [ignore]
-project.sublime-project
-project.sublime-workspace
+project.sublime-\w+
