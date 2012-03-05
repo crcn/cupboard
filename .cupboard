@@ -1,6 +1,5 @@
 [commands]
-proj = subl --project project.sublime-project
-
+proj = subl -b --project project.sublime-project
 
 [ignore]
 project.sublime-\w+
