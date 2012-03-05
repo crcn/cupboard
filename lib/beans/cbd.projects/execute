@@ -1,7 +1,0 @@
-#!/bin/bash -e
-
-eval "$@ &"
-
-# this gets parsed out
-echo "CHILD-PID:$!"
-
