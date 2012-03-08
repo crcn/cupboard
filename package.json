@@ -15,7 +15,7 @@
         "findit": "0.1.1",
         "relative-date": "1.1.1",
         "underscore": "*",
-        "structr": "*",
+        "structr": "0.2.x",
         "beanpoll": "<0.3.0",
         "plugin": "<0.2.0",
         "vine": "0.0.10",
