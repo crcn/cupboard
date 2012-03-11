@@ -13,7 +13,7 @@ confDir = path.relative ? path.relative(path.dirname(newConfPath), orgConfPath) 
 
 
 //needed ONLY on first time initializing app 
-exec('mkdir -p '+process.env.CONF_DIR+'; mkdir -p '+ process.env.CONF_DIR + '/my_conf; ln -s ' + confDir + ' ' + newConfPath, function() {
+exec('mkdir -p '+process.env.CONF_DIR+'; mkdir -p '+ process.env.CONF_DIR + '/{my_conf,node_modules}; ln -s ' + confDir + ' ' + newConfPath, function() {
 	
 	fs.stat(process.env.MAIN_CFG, function(err, stat) {
 		
