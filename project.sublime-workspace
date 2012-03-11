@@ -27,7 +27,7 @@
 			"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 			"settings":
 			{
-				"buffer_size": 4383,
+				"buffer_size": 4378,
 				"line_ending": "Unix"
 			}
 		},
@@ -106,7 +106,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 814,
+				"buffer_size": 818,
 				"line_ending": "Unix"
 			}
 		},
@@ -114,7 +114,7 @@
 			"file": "lib/bootstrap.js",
 			"settings":
 			{
-				"buffer_size": 636,
+				"buffer_size": 640,
 				"line_ending": "Unix"
 			}
 		},
@@ -221,7 +221,7 @@
 			"file": "lib/beans/cbd.projects/index.js",
 			"settings":
 			{
-				"buffer_size": 4383,
+				"buffer_size": 4378,
 				"line_ending": "Unix"
 			}
 		},
@@ -328,12 +328,20 @@
 			"file": "lib/beans/cbd.projects/processor.js",
 			"settings":
 			{
-				"buffer_size": 3321,
+				"buffer_size": 3322,
 				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/tmp/subl stdin QXAqrX.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin w1vF37.txt",
 			"settings":
 			{
 				"buffer_size": 0,
@@ -497,7 +505,7 @@
 	"groups":
 	[
 		{
-			"selected": 40,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -558,7 +566,7 @@
 					"file": "/Users/craig/.cupboard/projects/cupboard/lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4383,
+						"buffer_size": 4378,
 						"regions":
 						{
 						},
@@ -822,15 +830,15 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 814,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								480,
+								480
 							]
 						],
 						"settings":
@@ -850,7 +858,7 @@
 					"file": "lib/bootstrap.js",
 					"settings":
 					{
-						"buffer_size": 636,
+						"buffer_size": 640,
 						"regions":
 						{
 						},
@@ -1198,15 +1206,15 @@
 					"file": "lib/beans/cbd.projects/index.js",
 					"settings":
 					{
-						"buffer_size": 4383,
+						"buffer_size": 4378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								409,
-								409
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1542,15 +1550,15 @@
 					"file": "lib/beans/cbd.projects/processor.js",
 					"settings":
 					{
-						"buffer_size": 3321,
+						"buffer_size": 3322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3321,
-								3321
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1592,7 +1600,7 @@
 				},
 				{
 					"buffer": 41,
-					"file": "/tmp/subl stdin cGVCof.txt",
+					"file": "/tmp/subl stdin w1vF37.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1618,6 +1626,32 @@
 				},
 				{
 					"buffer": 42,
+					"file": "/tmp/subl stdin cGVCof.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 43,
 					"file": "lib/beans/cbd.projects/model.js",
 					"settings":
 					{
@@ -1644,7 +1678,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 44,
 					"file": ".gitignore",
 					"settings":
 					{
@@ -1670,7 +1704,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 44,
+					"buffer": 45,
 					"file": "lib/beans/cbd.projects/getUpdatedFiles.js",
 					"settings":
 					{
@@ -1697,7 +1731,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 45,
+					"buffer": 46,
 					"file": ".cupboard",
 					"settings":
 					{
@@ -1723,7 +1757,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 46,
+					"buffer": 47,
 					"file": "/tmp/subl stdin Hq7npW.txt",
 					"settings":
 					{
@@ -1749,7 +1783,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 48,
 					"file": "/tmp/subl stdin zV8gzp.txt",
 					"settings":
 					{
