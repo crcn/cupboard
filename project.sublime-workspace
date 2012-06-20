@@ -50,7 +50,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 8458,
+				"buffer_size": 8433,
 				"line_ending": "Unix"
 			}
 		},
@@ -181,7 +181,7 @@
 			"file": "lib/beans/cbd.command.install/index.js",
 			"settings":
 			{
-				"buffer_size": 2061,
+				"buffer_size": 2116,
 				"line_ending": "Unix"
 			}
 		},
@@ -278,6 +278,14 @@
 			"settings":
 			{
 				"buffer_size": 851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 7CDwXd.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -513,7 +521,7 @@
 	"groups":
 	[
 		{
-			"selected": 33,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -653,15 +661,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 8458,
+						"buffer_size": 8433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								359,
-								359
+								1415,
+								1415
 							]
 						],
 						"settings":
@@ -670,7 +678,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1078,15 +1086,15 @@
 					"file": "lib/beans/cbd.command.install/index.js",
 					"settings":
 					{
-						"buffer_size": 2061,
+						"buffer_size": 2116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1815,
-								1815
+								415,
+								415
 							]
 						],
 						"settings":
@@ -1095,7 +1103,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 707.0,
+						"translation.y": 184.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1423,6 +1431,32 @@
 				},
 				{
 					"buffer": 34,
+					"file": "/tmp/subl stdin 7CDwXd.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 35,
 					"file": "conf/main.conf",
 					"settings":
 					{
@@ -1448,7 +1482,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 36,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -1469,13 +1503,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 812.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 37,
 					"file": "lib/beans/cbd.command.prls/index.js",
 					"settings":
 					{
@@ -1502,7 +1536,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 38,
 					"file": "/tmp/subl stdin VyUU3B.txt",
 					"settings":
 					{
@@ -1528,7 +1562,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 38,
+					"buffer": 39,
 					"file": "/tmp/subl stdin Nl6iq8.txt",
 					"settings":
 					{
@@ -1554,7 +1588,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 39,
+					"buffer": 40,
 					"file": "/tmp/subl stdin ZBuVez.txt",
 					"settings":
 					{
@@ -1580,7 +1614,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 40,
+					"buffer": 41,
 					"file": "lib/beans/cbd.projects/processor.js",
 					"settings":
 					{
@@ -1607,7 +1641,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 41,
+					"buffer": 42,
 					"file": "/tmp/subl stdin QXAqrX.txt",
 					"settings":
 					{
@@ -1633,7 +1667,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 42,
+					"buffer": 43,
 					"file": "/tmp/subl stdin w1vF37.txt",
 					"settings":
 					{
@@ -1659,7 +1693,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 44,
 					"file": "/tmp/subl stdin cGVCof.txt",
 					"settings":
 					{
@@ -1685,7 +1719,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 44,
+					"buffer": 45,
 					"file": "lib/beans/cbd.projects/model.js",
 					"settings":
 					{
@@ -1712,7 +1746,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 45,
+					"buffer": 46,
 					"file": ".gitignore",
 					"settings":
 					{
@@ -1738,7 +1772,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 46,
+					"buffer": 47,
 					"file": "lib/beans/cbd.projects/getUpdatedFiles.js",
 					"settings":
 					{
@@ -1765,7 +1799,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 48,
 					"file": ".cupboard",
 					"settings":
 					{
@@ -1791,7 +1825,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 48,
+					"buffer": 49,
 					"file": "/tmp/subl stdin Hq7npW.txt",
 					"settings":
 					{
@@ -1817,7 +1851,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 49,
+					"buffer": 50,
 					"file": "/tmp/subl stdin zV8gzp.txt",
 					"settings":
 					{

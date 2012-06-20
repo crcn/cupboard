@@ -37,9 +37,9 @@ Or call the `./install` script.
 	
 ### Installation
 
-	cbd install bean.notify.growl
-	cbd install bean.cupboard.github
-	cbd install bean.cupboard.scaffold
+	cbd install beanpoll-growl
+	cbd install cupboard-bootstrap
+	cbd install cupboard-github
 	
 or all together:
 
