@@ -8,7 +8,7 @@
     "url": "git://github.com/crcn/cupboard.git"
   },
   "dependencies": {
-    "gumbo": "0.1.2",
+    "gumbo": "0.1.x",
     "colors": "0.5.1",
     "celeri": "0.3.x",
     "ini": "1.0.1",
