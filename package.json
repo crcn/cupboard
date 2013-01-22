@@ -17,7 +17,7 @@
         "underscore": "*",
         "structr": "0.2.x",
         "beanpoll": "<0.3.0",
-        "plugin": "<0.2.0",
+        "plugin": "<0.3.0",
         "vine": "0.0.10",
         "chowder": "*",
         "watch_r": "*",
